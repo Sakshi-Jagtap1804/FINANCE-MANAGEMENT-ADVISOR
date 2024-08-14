@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LumpSum Calculator</title>
+    <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-bundle.min.js"></script>
+    <style>
+        /* Add any custom styles here */
+        #container {
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            margin-top: 20px;
+        }
+        #chart-container {
+            margin: 20px auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bootstrap-styles">
+        <div class="container mycalculator py-5">
+            <h1>LumpSum Calculator</h1>
+            <form>
+                <label for="pvalue">Present Value</label>
+                <input
+                    type="number"
+                    id="pvalue"
+                    name="amount"
+                    placeholder="Enter Amount"
+                    required
+                />
+                <label for="interest">Rate of Interest (Annual)</label>
+                <input
+                    type="number"
+                    id="interest"
+                    name="amount"
+                    placeholder="Enter Rate of Interest"
+                    required
+                />
+                <label for="Number of Years">Number of Years</label>
+                <input
+                    type="number"
+                    id="num"
+                    name="amount"
+                    placeholder="years"
+                    required
+                />
+                <button
+                    type="button"
+                    class="registerbtn"
+                    onclick="calculateFV()"
+                    id="button"
+                >
+                    Submit
+                </button>
+            </form>
+            <table id="ans">
+                <tbody>
+                    <tr>
+                        <th>Amount Invested:</th>
+                        <td id="pvalue2"></td>
+                    </tr>
+                    <tr>
+                        <th>Future Value:</th>
+                        <td id="calculateFV"></td>
+                    </tr>
+                    <tr>
+                        <th>Number of Years Invested:</th>
+                        <td id="num1"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="chart-container"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let a = [
+            "",
+            "one ",
+            "two ",
+            "three ",
+            "four ",
+            "five ",
+            "six ",
+            "seven ",
+            "eight ",
+            "nine ",
+            "ten ",
+            "eleven ",
+            "twelve ",
+            "thirteen ",
+            "fourteen ",
+            "fifteen ",
+            "sixteen ",
+            "seventeen ",
+            "eighteen ",
+            "nineteen ",
+        ];
+        let b = [
+            "",
+            "",
+            "twenty",
+            "thirty",
+            "forty",
+            "fifty",
+            "sixty",
+            "seventy",
+            "eighty",
+            "ninety",
+        ];
+        function inWords(num) {
+            if ((num = num.toString()).length > 9) return "overflow";
+            n = ("000000000" + num)
+                .substr(-9)
+                .match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+            if (!n) return;
+            var str = "";
+            str +=
+                n[1] != 0
+                    ? (a[Number(n[1])] || b[n[1][0]] + " " + a[n[1][1]]) +
+                    "crore "
+                    : "";
+            str +=
+                n[2] != 0
+                    ? (a[Number(n[2])] || b[n[2][0]] + " " + a[n[2][1]]) + "lakh "
+                    : "";
+            str +=
+                n[3] != 0
+                    ? (a[Number(n[3])] || b[n[3][0]] + " " + a[n[3][1]]) +
+                    "thousand "
+                    : "";
+            str +=
+                n[4] != 0
+                    ? (a[Number(n[4])] || b[n[4][0]] + " " + a[n[4][1]]) +
+                    "hundred "
+                    : "";
+            str +=
+                n[5] != 0
+                    ? (str != "" ? "and " : "") +
+                    (a[Number(n[5])] || b[n[5][0]] + " " + a[n[5][1]]) +
+                    "only "
+                    : "";
+            return str;
+        }
+        function FV(PV, i, n) {
+            var x = 1 + i / 100;
+            var FV = PV * Math.pow(x, n);
+            return FV;
+        }
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }//formula
+        function calculateFV() {
+            var pvalue = parseFloat(document.getElementById("pvalue").value);
+            document.getElementById("pvalue").innerHTML = pvalue;
+            var interest = parseFloat(
+                document.getElementById("interest").value
+            );
+            var num = parseInt(document.getElementById("num").value);
+            var fvalue = FV(pvalue, interest, num);
+            var fv = fvalue.toFixed(2);
+            document.getElementById("calculateFV").innerHTML =
+                numberWithCommas(fv);
+            document.getElementById("num1").innerHTML = numberWithCommas(num);
+            document.getElementById("pvalue2").innerHTML =
+                numberWithCommas(pvalue);
+
+            // Create the data for the pie chart
+            var data = [
+                { x: "Invested", value: pvalue },
+                { x: "Remaining", value: fvalue - pvalue }
+            ];
+
+            // Create the pie chart
+            var chart = anychart.pie();
+
+            // Set the chart title
+            chart.title("Invested vs Remaining Amount");
+
+            // Add the data to the chart
+            chart.data(data);
+
+            // Display the chart in the container
+            chart.container('chart-container');
+            chart.draw();
+        }
+    </script>
+</body>
+</html>

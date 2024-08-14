@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Data Based on Risk Level</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0; /* Light background color */
+    }
+    .container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      width: 600px;
+      background-color: #fff; /* White background color */
+    }
+    .button {
+      background-color: #ddd; /* Light gray background color */
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .button:hover {
+      background-color: #ccc; /* Darker gray background color on hover */
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2; /* Light gray background color for table header */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Enquiry Form</h1>
+    <!-- Your enquiry form fields here -->
+
+    <h1>Select Risk Level:</h1>
+    <select id="Risk">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    
+    <h1>Select Interest Level:</h1>
+    <select id="Interest">
+      <option value="lte5">Less than or equal to 5%</option>
+      <option value="gt5">Greater than 5%</option>
+    </select>
+
+    <h1>Select Gender:</h1>
+    <select id="Gender">
+      <option value="Female">Female</option>
+      <option value="Male">Male</option>
+
+    <option value="Both">Both</option>
+    </select>
+
+    <button class="button" onclick="fetchData()">Get Suggestions</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  <script>
+    async function fetchData() {
+      const risk = document.getElementById('Risk').value;
+      const interest = document.getElementById('Interest').value.toLowerCase(); // Convert to lowercase
+      const gender = document.getElementById('Gender').value; // Get selected gender
+      
+      try {
+        // Fetch data from enquiry form (assuming you have an API to fetch form data)
+        const formDataResponse = await fetch('http://localhost:7000/api/enquiry');
+        const formData = await formDataResponse.json();
+
+        // Fetch data based on user selection
+        const response = await fetch(`http://localhost:8000/api/options?Risk=${risk}&interest=${interest}&Gender=${gender}`);
+        const data = await response.json();
+        
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = ''; // Clear existing content`
+
+        // Create and append table with fetched data
+        const table = document.createElement('table');
+        const thead = document.createElement('thead');
+        const tbody = document.createElement('tbody');
+        const tr = document.createElement('tr');
+        const thNames = ['Name', 'Amount', 'Interest', 'Risk', 'Maturity', 'Min Age', 'Gender', 'Max Amount'];
+        
+        thNames.forEach(name => {
+          const th = document.createElement('th');
+          th.textContent = name;
+          tr.appendChild(th);
+        });
+        thead.appendChild(tr);
+        table.appendChild(thead);
+        
+        data.forEach(option => {
+          const tr = document.createElement('tr');
+          const tdValues = [
+            option.name,
+            option.amount,
+            `${option.interest}%`,
+            option.Risk,
+            `${option.Maturity} years`,
+            option.Min_Age,
+            option.Gender,
+            option.Max_Amount
+          ];
+          
+          tdValues.forEach(value => {
+            const td = document.createElement('td');
+            td.textContent = value;
+            tr.appendChild(td);
+          });
+          tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
+        resultDiv.appendChild(table);
+
+        // Append form data to resultDiv
+        const formDataDiv = document.createElement('div');
+        formDataDiv.innerHTML = '<h2>Enquiry Form Data:</h2>'; // Assuming you have fetched form data
+        // Loop through form data and append to formDataDiv
+        for (const [key, value] of Object.entries(formData)) {
+          formDataDiv.innerHTML += `<p><strong>${key}:</strong> ${value}</p>`;
+        }
+        resultDiv.appendChild(formDataDiv);
+
+        // Generate PDF
+        const element = document.querySelector('.container');
+        const options = {
+          margin: 1,
+          filename: 'suggestions.pdf',
+          image: { type: 'jpeg', quality: 0.98 },
+          html2canvas: { scale: 2 },
+          jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+        await html2pdf().from(element).set(options).save();
+      } catch (error) {
+        console.log('Error fetching data:', error);
+        const resultDiv = document.getElementById('result');
+        resultDiv.innerHTML = 'Failed to fetch options'; // Display error message if fetching fails
+      }
+    }
+  </script>
+</body>
+</html>

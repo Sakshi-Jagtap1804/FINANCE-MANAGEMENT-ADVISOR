@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0; /* Optional: Set a background color */
+            font-family: "Poppins", sans-serif; /* Add your preferred font family */
+        }
+
+        .box {
+            width: 400px; /* Adjust the width as needed */
+            padding: 20px;
+            background-color: #fff; /* Optional: Set a background color */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Styling for navbar */
+        .navbar {
+            background-color: #000;
+            color: #fff; /* Text color for navbar links */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 9999; /* Ensure navbar stays on top of other content */
+            display: flex;
+            justify-content: space-between; /* Align items to the left and right */
+            padding: 10px 20px; /* Adjust padding as needed */
+            box-sizing: border-box; /* Ensure padding and border are included in the width */
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+
+        .navbar-brand img {
+            max-height: 40px; /* Adjust height as needed */
+            margin-right: 10px; /* Adjust spacing as needed */
+        }
+
+        .navbar-brand span {
+            font-size: 16px; /* Adjust font size as needed */
+        }
+
+        .navbar-nav {
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+
+        .nav-item {
+            margin-left: 15px; /* Adjust spacing between navbar items */
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="navbar-brand">
+        <img src="/Images/black white grow logo.png" alt="logo" onerror="this.src='https://dz8fbjd9gwp2s.cloudfront.net/resources/images/yourlogohere.jpg'">
+        <span>FINANCE ADVISOR</span>
+    </div>
+
+    <nav class="navbar-nav">
+        <a href="/index.html" class="nav-link">Blog</a>
+        <a href="/PAGES/financial-calculator.html" class="nav-link">Financial Calculators</a>
+        <a href="/PAGES/Investment Types.html" class="nav-link">Investment Types</a>
+        <a href="/DB _c/mongose/index.html" class="nav-link">Plan</a>
+        <a href="/PAGES/Aboutus.html" class="nav-link">About Us</a>
+        <a href="javascript:void(0);" class="nav-link">Login</a>
+    </nav>
+</header>
+
+<div class="box">
+    <h1>Sign Up</h1>
+
+    <form action="/signup" method="post">
+        <input placeholder="Name" name="name" type="text">
+        <br>
+        <input placeholder="Password" name="password" type="password">
+        <br>
+        <input class="sub" type="submit">
+    </form>
+
+    <a href="/">Go back to login page</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Financial Calculator - Sakshi Jagtap</title>
+
+    <link
+      href="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder2/box/box.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder2/assets/minimalist-blocks/content.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder2/assets/scripts/animate/animate.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="google" content="notranslate" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <script>
+      var orgCountry = "IN";
+    </script>
+
+    <link
+      id="theme"
+      href="https://dz8fbjd9gwp2s.cloudfront.net/resources/themes/default/spectre.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+    /></noscript>
+
+    <link
+      rel="preload"
+      href="https://dz8fbjd9gwp2s.cloudfront.net/resources/css/intlTelInput.css?v=1"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://dz8fbjd9gwp2s.cloudfront.net/resources/css/intlTelInput.css?v=1"
+    /></noscript>
+
+    <link
+      rel="preload"
+      href="https://dz8fbjd9gwp2s.cloudfront.net/fontawesome/css/all.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://dz8fbjd9gwp2s.cloudfront.net/fontawesome/css/all.min.css"
+    /></noscript>
+
+    <link
+      id="theme-exp"
+      href="https://dz8fbjd9gwp2s.cloudfront.net/resources/themes/default/spectre-exp.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://dz8fbjd9gwp2s.cloudfront.net/staticfiles/resources/stylesheets/sstyles_90017c24c22e046146ce5afe7b449f17.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://dz8fbjd9gwp2s.cloudfront.net/staticfiles/resources/stylesheets/sstore_b265a98dd3895958fa4b1490ae89a464.css"
+    />
+
+    <style type="text/css">
+      #loginLoader {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100px;
+        top: 50%;
+      }
+      .customSocialBtn {
+        display: flex;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 67px;
+        position: static;
+        left: 0px;
+        top: 40px;
+        cursor: pointer;
+        margin: auto;
+        border: none;
+        /*width: 364px;
+	    	height: 48px;
+	      background: #000000; */
+        /*For New Button Remove Bellow Codes and Uncomment upper Code  */
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+        width: 245px;
+        height: 40px;
+      }
+
+      .customSocialBtn img.icon {
+        height: 20px;
+        width: 20px;
+        margin: auto 10px;
+      }
+      .customSocialBtn span.buttonText {
+        width: 145px;
+        height: 17px;
+        left: 0px;
+        top: 0px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 120%;
+        opacity: 0.9;
+        text-align: left;
+        font-family: "Roboto", sans-serif;
+        /* color: #F7F7F7; */
+        /*For New Button Remove Bellow Codes and Uncomment upper Code  */
+        color: #808080;
+      }
+    </style>
+
+    <style type="text/css">
+      .main.container {
+        margin-top: calc(var(--headerHeight) + 25px);
+      }
+    </style>
+
+    <style type="text/css">
+      footer a,
+      footer + div a {
+        color: var(--footerTextColor) !important;
+      }
+      footer .socialIcons {
+        text-align: right;
+      }
+      @media (max-width: 600px) {
+        footer .linksCont a {
+          display: block !important;
+        }
+        footer .socialIcons {
+          text-align: center;
+          margin-top: 20px;
+        }
+      }
+    </style>
+
+    <style type="text/css">
+      :root {
+        --themeColor: #5755d9;
+        --themeBGColor: #fff;
+        --headerHeight: 80px;
+        --headerTextColor: #ffffff;
+        --headerBGColor: #000000;
+      }
+    </style>
+
+    <style type="text/css">
+      .spectre header a {
+        color: white !important;
+      }
+
+      .randomtext {
+        color: blue;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif !important;
+      }
+
+      .owl-nav {
+        display: none;
+      }
+
+      .scourse .card-footer {
+        position: relative;
+      }
+      .scourse .card-footer::after {
+        content: "BUY NOW";
+        position: absolute;
+        top: -10px;
+        right: 20px;
+        font-size: 12px !important;
+        padding: 3px 7px;
+        color: #fff;
+        border: 1px solid #5755d9;
+        background: #000;
+        border-radius: 5px;
+      }
+      /* .suggestCart .scourse .card-footer::after {
+        display: none;
+      } */
+      body {
+        color: #000;
+      }
+
+      .bootstrap-styles .modal.show .modal-dialog {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        margin-top: 100px !important;
+      }
+
+      .package .card .card-image::before,
+      .package .card .card-image::before,
+      .packageDesc::before {
+        content: "PACKAGE";
+        z-index: 2;
+        width: 80px;
+        padding: 3px 0;
+        position: absolute;
+        background: #f4be17;
+        border-radius: 0 20px 20px 0;
+        top: 8px;
+        left: 0;
+        font-size: 0.55rem;
+        font-weight: bold;
+        text-align: center;
+        color: #000;
+      }
+
+      .ctitle {
+        color: #000 !important;
+      }
+    </style>
+
+    <script type="text/javascript">
+      var learnerConsentMsg = `We've updated our <a href='/termsofuse' target='_blank' style='text-decoration:underline'>terms and conditions</a> and <a href='/privacy-policy' target='_blank' style='text-decoration:underline'>privacy policy</a>.<br>By proceeding, you agree to our new terms.`;
+    </script>
+
+    <script type="text/javascript">
+      var creatorConsentMsg = `We've updated our <a href='https://graphy.com/legal/terms' target='_blank' style='text-decoration:underline'>terms and conditions</a> and <a href='https://graphy.com/legal/privacy' target='_blank' style='text-decoration:underline'>privacy policy</a>.<br>By proceeding, you agree to our new terms.`;
+    </script>
+
+    <script type="text/javascript">
+      var cookieMsg = `We use cookies to personalise your experience and to analyse our website traffic. By continuing to use our website, you consent to our cookies.`;
+    </script>
+
+    <script
+      defer
+      type="text/javascript"
+      src="https://api.pirsch.io/pirsch-extended.js"
+      id="pirschextendedjs"
+      data-code="3rB4JMhR505KjIBB2RdZoDmXpEl5vfgm"
+    ></script>
+  </head>
+
+  <body class="">
+    <div class="header spectre fixed" style="background-color: #000000">
+      <header class="navbar container" style="min-height: 80px">
+        <!-- <div id="navbar-section-btn">
+          <a
+            class="btn btn-link btn-action ml-2"
+            id="header-collapse-btn"
+            href="javascript:void(0);"
+          >
+            <i class="icon-menu material-icons">menu</i>
+          </a>
+        </div> -->
+
+        <section class="navbar-section" style="min-height: 80px">
+          <a href="/" amplitude-event="navbar_link_tapped_user_landing_page"
+            ><img
+              alt="logo"
+              onerror="this.src='https://dz8fbjd9gwp2s.cloudfront.net/resources/images/yourlogohere.jpg'"
+              src="/IMAGES/black white grow logo.png"
+          /></a>
+        </section>
+
+        <section class="navbar-section menu-links">
+          <a href="/index.html" class="nav-link" data-id="blog">Blog</a>
+
+          <a
+            class="nav-link"
+            href="/S/PAGES/financial-calculator.html"
+            data-id="c4rur26wi"
+            >Financial Calculators</a
+          >
+
+          <a
+            class="nav-link"
+            href="/PAGES/Investment Types.html"
+            data-id="t8nxuuuwi"
+            >Investment Types</a
+          >
+
+          <a
+            class="nav-link"
+            href="/DB _c/mongose/index.html"
+            data-id="43r9i93be"
+            >Plan</a
+          >
+
+          <a class="nav-link" href="/PAGES/Aboutus.html" data-id="c51n8i06a"
+            >About Us</a
+          >
+
+          <a href="javascript:void(0);" class="btn btn-primary loginBtn"
+            >Login</a
+          >
+        </section>
+      </header>
+    </div>
+
+    <!-- <script>
+      var disabledLocleVar = "Disabled";
+      var enabledLocaleVar = "Enabled";
+      var smsLocaleVar = "SMS";
+      var webpushLocaleVar = "Web Push";
+      var mobilepushLocaleVar = "Mobile Push";
+      var invoicenumberLocaleVar = "Invoice Number";
+      var productLocaleVar = "Product";
+      var dateLocaleVar = "Date";
+      var amountLocaleVar = "Amount";
+      var detailsLocaleVar = "Details";
+      var subscriptionPlanLocaleVar = "Subscription Plan";
+      var addonsLocaleVar = "Add Ons";
+      var showLocalVar = "Show";
+      var hideLocaleVar = "Hide";
+    </script> -->
+
+    <div class="spectre">
+      <script>
+        var isPopupLogin = true;
+        var login = "";
+        var message = "";
+        function closeLoginPopup() {
+          $("#loginFormHtml").removeClass("active");
+          $("body").removeClass("overflowYDisable");
+        }
+      </script>
+
+      <div class="modal" id="loginFormHtml">
+        <iframe
+          id="microfe-popup-login"
+          src="/t/public/login"
+          loading="lazy"
+          style="width: calc(100% + 10px); height: 100vh; border: none"
+          onload="$(this).parent().removeClass('loading');"
+        ></iframe>
+      </div>
+
+      <div
+        class="modal"
+        id="newCheckoutHtml"
+        style="padding: 0; z-index: 10000"
+      >
+        <!-- <a href="javascript:void(0);" class="modal-overlay close"
+			aria-label="Close"></a>
+		<div class="modal-container" style=""> -->
+
+        <iframe
+          id="newCheckoutIframe"
+          sandbox="allow-top-navigation allow-modals allow-popups allow-presentation allow-orientation-lock allow-pointer-lock allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation allow-scripts allow-same-origin allow-forms"
+          style="width: calc(100% + 10px); height: 100%; border: none"
+          src=""
+        ></iframe>
+
+        <!-- </div> -->
+      </div>
+    </div>
+
+    <script type="text/template" id="coursecard-template">
+      <div class="column scourse <@- item['spayee:resource']['spayee:courseType'] @> hidePackageRibbon<@- item['spayee:resource']['spayee:hidePackageRibbon'] @>">
+
+
+
+
+      					<a class="card courseDiscId" title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>" data-id="<@- item._id@>" data-dcid="<@-item._id@>">
+
+
+                    <div class="card-image relative <@ print(item["spayee:resource"]["spayee:availableForMembership"] ? 'includedInMembership' : '') @>">
+      				<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id + "/" + item._id +"_scaled_cover.jpg?v=" + item["spayee:resource"]["spayee:coverVersion"]; if(isNaN(item["spayee:resource"]["spayee:coverVersion"])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      				<div class="blurbg lazy" data-bg="<@- curl @>"></div>
+                      <img alt="<@- item['spayee:resource']['spayee:title'] @> cover" class="lazy" data-src="<@- curl @>" onerror="showCourseDefaultCover(this, '<@- item._id @>')">
+                    </div>
+
+                    <div class="card-body text-ellipsis">
+      					<span class="ctitle" style="color:#2f4f4f;"><@- item["spayee:resource"]["spayee:title"] @></span><br>
+
+      					<@ if(item.rating !== undefined) { @>
+      						<span class="text-gray ratingIcons icon-text">
+      						<@ for(var i=1;i<6;i++) { @>
+      							<@ if(item.rating.avgRating >= i) { @><i class="material-icons text-primary">star</i><@ }else if(item.rating.avgRating > i-1 && item.rating.avgRating < i) { @><i class="material-icons text-primary">star_half</i><@ }else { @>
+      							<i class="material-icons">star_border</i>
+      						<@ } } @></span><small class="d-inline-block pl-1 text-dark"><@ print(formatRating(item['rating']['avgRating'])) @> (<@- item['rating']['total'] @> ratings)</small>
+      					<@ }else { @> <span class="text-gray ratingIcons icon-text">&nbsp;</span> <@ } @>
+      					<br>
+      					<span class="text-gray">
+      						<@ if(item['spayee:resource']['spayee:courseType'] === 'package') { @>
+      							<@ print(item["courses-count"]!==undefined?item["courses-count"]:"0") @> Courses
+      						<@ }else { @>
+      							<@ print(item["spayee:resource"]["spayee:publisher"]!==undefined?htmlEntities(item["spayee:resource"]["spayee:publisher"]):"&nbsp;") @>
+      						<@ } @>
+      					</span>
+      			  </div>
+                    <div class="card-footer">
+      				<@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', true)) @>
+                    </div>
+                  </a>
+      </div>
+    </script>
+
+    <script type="text/template" id="blogcard-template">
+      <div class="column col-3 col-md-6 col-sm-6 col-xs-12 scourse" style="margin-bottom: 20px;">
+      			<a class="card" title="<@- item['spayee:resource']['spayee:title'] @>" href="/blog/<@- item['spayee:resource']['spayee:url'] @>">
+                    <div class="card-image relative">
+      				<@ if(item['spayee:resource']['spayee:cover'] !== undefined && item['spayee:resource']['spayee:cover']) { @>
+      					<div class="blurbg lazy" data-bg="https://dz8fbjd9gwp2s.cloudfront.net/articles/<@- item._id @>/cover.jpg<@ print(item["spayee:resource"]["spayee:coverVersion"] !== undefined?"?v="+item["spayee:resource"]["spayee:coverVersion"]:"") @>"></div>
+      					<img alt="<@- item['spayee:resource']['spayee:title'] @> cover" class="img-responsive centered relative lazy" style="max-height: 100%;" data-src="https://dz8fbjd9gwp2s.cloudfront.net/articles/<@- item._id @>/cover.jpg?v=<@- item['spayee:resource']['spayee:coverVersion'] @>" onerror="showCourseDefaultCover(this, '<@- item._id @>')">
+      				<@ }else { @>
+      					<div class="blurbg lazy" data-bg="https://dz8fbjd9gwp2s.cloudfront.net/resources/images/defaultCourseCover.png"></div>
+      					<img alt="<@- item['spayee:resource']['spayee:title'] @> cover" class="img-responsive centered relative lazy" style="max-height: 100%;" data-src='https://dz8fbjd9gwp2s.cloudfront.net/resources/images/defaultCourseCover.png'>
+      				<@ } @>
+                    </div>
+                    <div class="card-body text-ellipsis"><span style="color:#2f4f4f;"><@- item["spayee:resource"]["spayee:title"] @></span></div>
+                    <div class="card-footer" style="padding: 0.4rem;">
+      				<span class="text-gray float-left text-ellipsis" style="max-width: calc(100% - 110px);"><@ print(item["spayee:resource"]["spayee:author"]!==undefined?htmlEntities(item["spayee:resource"]["spayee:author"]):"") @></span>
+      				<@ var pdate = item.createdDate.$date; if(item['spayee:resource']['spayee:publishDate'] !== undefined && item['spayee:resource']['spayee:publishDate'] !== '') { pdate = item['spayee:resource']['spayee:publishDate']; } @>
+      				<time class="float-right text-warning"><@ print(formatDate(new Date(pdate))) @></time>
+                    </div>
+                  </a>
+      </div>
+    </script>
+
+    <script type="text/javascript">
+      var uuid = function (a) {
+        // https://github.com/amplitude/Amplitude-Javascript/blob/master/src/uuid.js
+        return a // if the placeholder was passed, return
+          ? // a random number from 0 to 15
+            (
+              a ^ // unless b is 8,
+              ((Math.random() * // in which case
+                16) >> // a random number from
+                (a / 4))
+            ) // 8 to 11
+              .toString(16) // in hexadecimal
+          : // or otherwise a concatenated string:
+            (
+              [1e7] + // 10000000 +
+              -1e3 + // -1000 +
+              -4e3 + // -4000 +
+              -8e3 + // -80000000 +
+              -1e11
+            ) // -100000000000,
+              .replace(
+                // replacing
+                /[018]/g, // zeroes, ones, and eights with
+                uuid // random hex digits
+              );
+      };
+
+      (function (e, t) {
+        var n = e.amplitude || { _q: [], _iq: {} };
+        var r = t.createElement("script");
+        r.type = "text/javascript";
+        r.integrity =
+          "sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS";
+        r.crossOrigin = "anonymous";
+        r.async = true;
+        r.src = "https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js";
+        r.onload = function () {
+          if (!e.amplitude.runQueuedFunctions) {
+            console.log("[Amplitude] Error: could not load SDK");
+          }
+        };
+        var i = t.getElementsByTagName("script")[0];
+        i.parentNode.insertBefore(r, i);
+        function s(e, t) {
+          e.prototype[t] = function () {
+            this._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            return this;
+          };
+        }
+        var o = function () {
+          this._q = [];
+          return this;
+        };
+        var a = [
+          "add",
+          "append",
+          "clearAll",
+          "prepend",
+          "set",
+          "setOnce",
+          "unset",
+          "preInsert",
+          "postInsert",
+          "remove",
+        ];
+        for (var c = 0; c < a.length; c++) {
+          s(o, a[c]);
+        }
+        n.Identify = o;
+        var u = function () {
+          this._q = [];
+          return this;
+        };
+        var l = [
+          "setProductId",
+          "setQuantity",
+          "setPrice",
+          "setRevenueType",
+          "setEventProperties",
+        ];
+        for (var p = 0; p < l.length; p++) {
+          s(u, l[p]);
+        }
+        n.Revenue = u;
+        var d = [
+          "init",
+          "logEvent",
+          "logRevenue",
+          "setUserId",
+          "setUserProperties",
+          "setOptOut",
+          "setVersionName",
+          "setDomain",
+          "setDeviceId",
+          "enableTracking",
+          "setGlobalUserProperties",
+          "identify",
+          "clearUserProperties",
+          "setGroup",
+          "logRevenueV2",
+          "regenerateDeviceId",
+          "groupIdentify",
+          "onInit",
+          "logEventWithTimestamp",
+          "logEventWithGroups",
+          "setSessionId",
+          "resetSessionId",
+        ];
+        function v(e) {
+          function t(t) {
+            e[t] = function () {
+              e._q.push([t].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          }
+          for (var n = 0; n < d.length; n++) {
+            t(d[n]);
+          }
+        }
+        v(n);
+        n.getInstance = function (e) {
+          e = (!e || e.length === 0 ? "$default_instance" : e).toLowerCase();
+          if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
+            n._iq[e] = { _q: [] };
+            v(n._iq[e]);
+          }
+          return n._iq[e];
+        };
+        e.amplitude = n;
+      })(window, document);
+
+      amplitude.getInstance().init("e56929a4c3888c23e97a7e70e34ccf6c");
+      amplitude.getInstance().setUserId(null);
+      //amplitude.getInstance().regenerateDeviceId();
+
+      // var userProperties = {
+      //   custom_domain: "www.rachanaranade.com",
+      //   org_id: "5df0bac8e4b0947308291487",
+      //   default_google_login_enabled: "true" == "true",
+      //   personalized_google_login_enabled:
+      //     "" != "" && "true" == "false" ? true : false,
+      //   facebook_login_enabled: "false" == "true" ? true : false,
+      // };
+      // amplitude.getInstance().setUserProperties(userProperties);
+
+      /*     var deviceId = uuid();
+	  amplitude.getInstance().setDeviceId(deviceId);
+	  sessionStorage.setItem('amplitudeDeviceId', deviceId); */
+    </script>
+
+    <script type="text/javascript">
+      window.signupParams = {
+        source: "store",
+        platform: "web",
+        sourceId: null,
+      };
+      var showGraphyFomoFlag = "";
+
+      showGraphyFomoFlag = "5df0bac8e4b0947308291487";
+    </script>
+
+    <script type="text/template" id="spcoursecard-2-template">
+      <div class="column third">
+      	<@ var planName = getCoursePlanName('IN', item), price = getCoursePrice('IN', item, '18.0', '18.0'), isPackage = item['spayee:resource']['spayee.courseType'] == 'package', courseId = isPackage ? '' : item._id, packageId = isPackage ? item._id : ''; @>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>"  amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="text-decoration: none;">
+      	<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id +"/"+ item._id +"_scaled_cover.jpg?v=" + item['spayee:resource']['spayee:coverVersion']; if(isNaN(item['spayee:resource']['spayee:coverVersion'])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      	<img class="lazy" data-src="<@- curl @>" alt="<@- item['spayee:resource']['spayee:title'] @> cover" onerror="showCourseDefaultCover(this, '<@- item._id @>')">
+      	<h4 class="size-21 text-ellipsis"><@- item['spayee:resource']['spayee:title'] @></h4>
+      	<p class="size-16"><@ if(item.rating !== undefined) { @>
+      						<span class="text-gray ratingIcons icon-text">
+      						<@ for(var i=1;i<6;i++) { @>
+      							<@ if(item.rating.avgRating >= i) { @><i class="material-icons text-primary">star</i><@ }else if(item.rating.avgRating > i-1 && item.rating.avgRating < i) { @><i class="material-icons text-primary">star_half</i><@ }else { @>
+      							<i class="material-icons">star_border</i>
+      						<@ } } @></span><span><@ print(formatRating(item['rating']['avgRating'])) @> (<@- item['rating']['total'] @> ratings)</span>
+      	<@ }else { @> <span class="text-gray ratingIcons icon-text">&nbsp;</span> <@ } @></p>
+      	<p class="size-16 text-ellipsis"><@ if(item['spayee:resource']['spayee:courseType'] === 'package') { @><@ print(item["courses-count"]!==undefined?item["courses-count"]:"0") @> Courses<@ }else { @>
+      		<@ print(item["spayee:resource"]["spayee:publisher"]!==undefined?item["spayee:resource"]["spayee:publisher"]:"&nbsp;") @><@ } @></p>
+
+      	<p class="size-18"><span style="color: rgb(21, 101, 192);"><@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', true)) @></span><br></p>
+      	<div style="margin:1em 0"></div>
+      	</a>
+      </div>
+    </script>
+    <script type="text/template" id="spcoursecard-1-template">
+      <div class="column third">
+      	<@ var planName = getCoursePlanName('IN', item), price = getCoursePrice('IN', item, '18.0', '18.0'), isPackage = item['spayee:resource']['spayee.courseType'] == 'package', courseId = isPackage ? '' : item._id, packageId = isPackage ? item._id : ''; @>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>"  amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="text-decoration: none;">
+      	<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id +"/"+ item._id +"_scaled_cover.jpg?v=" + item['spayee:resource']['spayee:coverVersion']; if(isNaN(item['spayee:resource']['spayee:coverVersion'])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      	<img class="lazy" data-src="<@- curl @>" alt="<@- item['spayee:resource']['spayee:title'] @> cover"  onerror="showCourseDefaultCover(this, '<@- item._id @>')">
+      	<h4 class="size-21 text-ellipsis"><@- item['spayee:resource']['spayee:title'] @></h4>
+      	<div class="size-16 text-ellipsis" style="max-height: 3rem;"><@ print(item['spayee:resource']['spayee:shortDescription']!==undefined?item['spayee:resource']['spayee:shortDescription']:"") @></div>
+
+      	<p class="size-18"><span style="color: rgb(21, 101, 192);"><@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', true)) @></span><br></p>
+      	<div style="margin:1em 0"></div>
+      	</a>
+      </div>
+    </script>
+    <script type="text/template" id="spcoursecard-3-template">
+      <div class="column third">
+      	<@ var planName = getCoursePlanName('IN', item), price = getCoursePrice('IN', item, '18.0', '18.0'), isPackage = item['spayee:resource']['spayee.courseType'] == 'package', courseId = isPackage ? '' : item._id, packageId = isPackage ? item._id : ''; @>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>"  amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="text-decoration: none;">
+      	<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id +"/"+ item._id +"_scaled_cover.jpg?v=" + item['spayee:resource']['spayee:coverVersion']; if(isNaN(item['spayee:resource']['spayee:coverVersion'])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      	<img class="lazy" data-src="<@- curl @>" alt="<@- item['spayee:resource']['spayee:title'] @> cover"  onerror="showCourseDefaultCover(this, '<@- item._id @>')">
+      	<h4 class="size-21 text-ellipsis"><@- item['spayee:resource']['spayee:title'] @></h4>
+      	<div class="size-16 text-ellipsis" style="max-height: 3rem;"><@ print(item['spayee:resource']['spayee:shortDescription']!==undefined?item['spayee:resource']['spayee:shortDescription']:"") @></div>
+      	<p class="size-16 text-ellipsis"><@ if(item['spayee:resource']['spayee:courseType'] === 'package') { @><@ print(item["courses-count"]!==undefined?item["courses-count"]:"0") @> Courses<@ }else { @>
+      		<@ print(item["spayee:resource"]["spayee:publisher"]!==undefined?item["spayee:resource"]["spayee:publisher"]:"&nbsp;") @><@ } @></p>
+      	<p class="size-18"><span style="color: rgb(21, 101, 192);"><@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', true)) @></span><br></p>
+      	<div style="margin:1em 0"></div>
+      	</a>
+      </div>
+    </script>
+
+    <script type="text/template" id="spcoursecard-4-template">
+      <div class="column third text-center" style="padding-left: 1rem; padding-right: 1rem; margin-bottom: 0px;">
+      	<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id +"/"+ item._id +"_scaled_cover.jpg?v=" + item['spayee:resource']['spayee:coverVersion']; if(isNaN(item['spayee:resource']['spayee:coverVersion'])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      	<@ var planName = getCoursePlanName('IN', item), price = getCoursePrice('IN', item, '18.0', '18.0'), isPackage = item['spayee:resource']['spayee.courseType'] == 'package', courseId = isPackage ? '' : item._id, packageId = isPackage ? item._id : ''; @>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>"  amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="text-decoration: none;">
+      	<img class="lazy" data-src="<@- curl @>" alt="<@- item['spayee:resource']['spayee:title'] @> cover"  onerror="showCourseDefaultCover(this, '<@- item._id @>')">
+      	</a>
+      	<h3 class="size-18 text-center"><b class="text-primary"><@- item['spayee:resource']['spayee:title'] @></b></h3>
+      	<div class="discription"><@ print(item['spayee:resource']['spayee:shortDescription']!==undefined?item['spayee:resource']['spayee:shortDescription']:"") @></div>
+      	<p class="size-18 price text-primary"><@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', true)) @></p>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>" class="buy-btn btn btn-primary" amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}'>Buy now<br></a>
+      </div>
+    </script>
+    <script type="text/template" id="spcoursecard-5-template">
+      <div class="column third" style="padding-left: 1rem; padding-right: 1rem; margin-bottom: 0px;">
+      	<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id +"/"+ item._id +"_scaled_cover.jpg?v=" + item['spayee:resource']['spayee:coverVersion']; if(isNaN(item['spayee:resource']['spayee:coverVersion'])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      	<@ var planName = getCoursePlanName('IN', item), price = getCoursePrice('IN', item, '18.0', '18.0'), isPackage = item['spayee:resource']['spayee.courseType'] == 'package', courseId = isPackage ? '' : item._id, packageId = isPackage ? item._id : ''; @>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>"  amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="text-decoration: none;">
+      	<img class="lazy" data-src="<@- curl @>" alt="<@- item['spayee:resource']['spayee:title'] @> cover"  onerror="showCourseDefaultCover(this, '<@- item._id @>')">
+      	</a>
+      	<h3 class="sub-heading"><b class="size-18 text-primary"><@- item['spayee:resource']['spayee:title'] @></b></h4>
+      	<p class="size-16 description text-primary"> <@ if(item['spayee:resource']['spayee:courseType'] === 'package') { @><@ print(item["courses-count"]!==undefined?item["courses-count"]:"0") @> Courses<@ }else { @>
+      		Instructor : <@ print(item["spayee:resource"]["spayee:publisher"]!==undefined?item["spayee:resource"]["spayee:publisher"]:"&nbsp;") @><@ } @></p>
+      	<@if(item.rating){@>
+      		<p class="size-16 description text-primary">Rating: &nbsp;
+      				<@ for (ratingsSize = 1; ratingsSize <= 5; ratingsSize++) {@>
+      				<@if(item.rating){@>
+      					<@if(item.rating.avgRating){@>
+      						<@ if(item.rating.avgRating >= ratingsSize) {@>
+      							<i class="icon ion-android-star text-primary"></i>&nbsp;
+      						<@ } else if(item.rating.avgRating > ratingsSize-1 && item.rating.avgRating < ratingsSize) { @>
+      							<i class="icon ion-android-star-half text-primary"></i>&nbsp;
+      						<@ } @>
+      					<@}@>
+        				<@}@>
+      			<@}@>
+      		</p>
+      	<@}@>
+
+      	<p class="size-18 price text-primary">Price : <@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', true)) @></p>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>" class="buy-btn btn btn-primary" amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}'>Buy now</a>
+      </div>
+    </script>
+
+    <script type="text/template" id="spcoursecard-6-template">
+      <div class="column third">
+      	<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id +"/"+ item._id +"_scaled_cover.jpg?v=" + item['spayee:resource']['spayee:coverVersion']; if(isNaN(item['spayee:resource']['spayee:coverVersion'])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      	<@ var planName = getCoursePlanName('IN', item), price = getCoursePrice('IN', item, '18.0', '18.0'), isPackage = item['spayee:resource']['spayee.courseType'] == 'package', courseId = isPackage ? '' : item._id, packageId = isPackage ? item._id : ''; @>
+
+
+
+      		<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>"  amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="text-decoration: none;">
+
+      	<img class="lazy" data-src="<@- curl @>" alt="<@- item['spayee:resource']['spayee:title'] @> cover"  onerror="showCourseDefaultCover(this, '<@- item._id @>')" style="border-radius: 20px; margin-bottom: 0px; width: 100%; height: 190px;object-fit:cover;">
+      	</a>
+      	<h5 style="font-size: 18px; font-weight: 800; line-height: 1.1;" class="text-ellipsis"><@- item['spayee:resource']['spayee:title'] @></h5>
+
+      	<p class="text-primary" style="word-break: break-all; font-size: 18px; font-weight: 700; line-height: 1.5; margin-top: 0px;"><@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', false)) @></p>
+
+
+
+      			<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>" class="buy-btn btn btn-primary" amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="border: none;padding: 16px 61px; font-size: 16px; letter-spacing: 0.08px; line-height: 16px; font-weight: 600; text-decoration: none; display: block; text-align: center;">
+      				Buy now
+      			</a>
+
+
+
+      </div>
+    </script>
+
+    <script type="text/template" id="spcoursecard-7-template">
+      <div class="column third course-mob-block">
+      	<div class="inner-course-block">
+      	<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id +"/"+ item._id +"_scaled_cover.jpg?v=" + item['spayee:resource']['spayee:coverVersion']; if(isNaN(item['spayee:resource']['spayee:coverVersion'])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      	<@ var planName = getCoursePlanName('IN', item), price = getCoursePrice('IN', item, '18.0', '18.0'), isPackage = item['spayee:resource']['spayee.courseType'] == 'package', courseId = isPackage ? '' : item._id, packageId = isPackage ? item._id : ''; @>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>"  amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="text-decoration: none;">
+      	<img class="lazy" data-style="width: 100%; height: auto;" data-src="<@- curl @>" alt="<@- item['spayee:resource']['spayee:title'] @> cover"  onerror="showCourseDefaultCover(this, '<@- item._id @>')" >
+      	</a>
+      	<div class="course-price-block">
+      	<p class="text-ellipsis" title="<@- item['spayee:resource']['spayee:title'] @>" style="font-size: 18px; font-weight: 700; line-height: 1.3rem; width: 100%; margin-top: 0px; margin-bottom: 0px; min-height: 47px;">
+      		<@- item['spayee:resource']['spayee:title'] @>
+      	</p>
+      	<p class="text-primary" style="word-break: break-all; font-size: 14px; font-weight: 500; line-height: 1.5; margin-top: 16px; margin-bottom: 0px;">
+      			<@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', false)) @>
+      	</p>
+      	</div>
+      	<a title="<@- item['spayee:resource']['spayee:title'] @>" href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>" class="buy-btn btn btn-primary" amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' style="display: inline-block; text-decoration: none; transition: all 0.16s ease 0s; border: none; cursor: pointer; border-radius: 4px; padding: 13px 28px; line-height: 1.5; font-weight: 600; font-size: 14px; letter-spacing: 0.15px; margin-top: 28px;">
+      		Enroll now
+      	</a>
+      	</div>
+      </div>
+    </script>
+
+    <script type="text/template" id="spcoursecard-8-template">
+      <div class="row clearfix" style="margin-bottom: 24px; margin-top: 14px;">
+      	<@ var curl = "https://dz8fbjd9gwp2s.cloudfront.net/courses/"+ item._id +"/"+ item._id +"_scaled_cover.jpg?v=" + item['spayee:resource']['spayee:coverVersion']; if(isNaN(item['spayee:resource']['spayee:coverVersion'])) { curl = showCourseDefaultCover(null, item._id);   } @>
+      	<@ var planName = getCoursePlanName('IN', item), price = getCoursePrice('IN', item, '18.0', '18.0'), isPackage = item['spayee:resource']['spayee.courseType'] == 'package', courseId = isPackage ? '' : item._id, packageId = isPackage ? item._id : ''; @>
+                        <div class="column third center" style="padding-left: 0px; padding-right: 0px;">
+                            <img
+                                class="lazy" data-src="<@- curl @>" alt="<@- item['spayee:resource']['spayee:title'] @> cover"  onerror="showCourseDefaultCover(this, '<@- item._id @>')"
+                                style="margin-top: 0px; margin-bottom: 0px;"
+                            />
+                        </div>
+                        <div class="column two-third course-block-mob" style="display: flex; flex-direction: column; justify-content: center;">
+                            <div class="course-price-block">
+      					<h3 style="color: rgb(255, 255, 255); font-size: 18px; font-weight: 700; line-height: 1.1; margin-bottom: 0px; margin-top: 0px;">
+      						<@- item['spayee:resource']['spayee:title'] @>
+      					</h3>
+                            	<div class="sortDescription8">
+                                	<@ print(item['spayee:resource']['spayee:shortDescription']!==undefined?item['spayee:resource']['spayee:shortDescription']:"") @>
+                            	</div>
+      				</div>
+
+                            <a class="buy-btn btn btn-primary" title="<@- item['spayee:resource']['spayee:title'] @>" amplitude-event="buy_now_tapped_course_checkout" amplitude-payload='{"plan_name": "<@- planName @>", "price": <@- price @>, "currency": "INR", "course_id": "<@- courseId @>", "is_package": <@- isPackage @>, "package_id": "<@- packageId @>"}' href="<@ print(getCourseLandingPageUrl(item._id, item['spayee:resource']['spayee:courseUrl'])) @>" style="width: fit-content; text-align: left; display: inline-block; text-decoration: none; transition: all 0.16s ease 0s; cursor: pointer; background-color: rgb(231, 215, 73); color: rgb(0, 0, 0);border-radius: 0px;padding: 16px 48px;line-height: 16px;font-weight: 700;font-size: 16px;letter-spacing: 0.08px;border-image: initial;">
+                                Enroll for <@ print(getCourseDisplayPrice('₹', 'IN', item, '18.0', '18.0', false)) @>
+                            </a>
+      			</div>
+            </div>
+    </script>
+
+    <!-- Curriculum 1st Template -->
+    <script type="text/template" id="coursecurr-1-template">
+         <table class="table courseContents">
+          <thead>
+              <tr>
+                  <td style="width: 50px;"></td>
+                  <td style="width: 50px;"></td>
+                  <td></td>
+              </tr>
+          </thead>
+          <tbody>
+              <@ $.each(item, function(index, value) { @>
+              <tr>
+                  <td><i class="material-icons courseItemIcon" data-type="<@- value.type @>"></i></td>
+                  <td colspan="2">
+                      <@- value.title @>
+      	<@ if(value.type == 'aiheading') { @>
+      		<small>(coming soon)</small><@ } @>
+      	<@ if(assetInfo && value.type == 'video' && value.duration !== undefined && value.duration > 0) { @>
+      		<small>(<@ print(Math.floor(value.duration)) @>:00)</small><@ } @>
+      	<@ if(assetInfo && value.type == 'pdf' && value.pages !== undefined && value.pages > 0) { @>
+      		<small>(<@- value.pages @> pages)</small>
+      	<@ } @>
+                  </td>
+              </tr>
+              <@ if(value.items != undefined) { @> <@ $.each(value['items'], function(index1, value1) { @>
+              <tr>
+                  <td></td>
+                  <td><i class="material-icons courseItemIcon" data-type="<@- value1.type @>"></i></td>
+                  <td>
+                      <@- value1.title @>
+      	<@ if(assetInfo && value.type == 'video' && value1.duration !== undefined && value1.duration > 0) { @><small>(<@ print(Math.floor(value1.duration)) @>:00)</small><@ } @>
+      	<@ if(assetInfo && value1.type =='pdf' && value1.pages !== undefined && value1.pages > 0) { @><small>(<@- value1.pages @> pages)</small><@ } @>
+      	<@ if(value1.type =='aiheading') { @><small>(coming soon)</small><@ } @>
+                  </td>
+              </tr>
+              <@ }); @> <@ } @> <@ }); @>
+          </tbody>
+      </table>
+    </script>
+
+    <!-- Curriculum 2nd Template -->
+    <script type="text/template" id="coursecurr-2-template">
+      <div class="column full curriculum2"  spellcheck="false">
+        <div class="course-content1" >
+      	<p style="font-size: 15px; font-weight: 400; margin-top: 0px;">
+      		<@if(summary.modules && summary.modules>0){@>
+      			<@print(summary.modules)@> Modules &nbsp;<i class="icon ion-android-folder-open"></i>&nbsp; &nbsp; <@if(summary.sessions && summary.sessions>0 && curriculumAssetInfo){@>|<@}@>&nbsp; &nbsp;
+      		<@}@>
+      		<@if(summary.sessions && summary.sessions>0 && curriculumAssetInfo){@>
+      			<@print(summary.sessions)@> Sessions <i class="icon ion-android-laptop"></i>&nbsp; &nbsp; <@if(summary.durations && summary.durations>0 && curriculumAssetInfo){@>|<@}@>&nbsp; &nbsp;
+      		<@}@>
+      		<@if(summary.durations && summary.durations>0 && curriculumAssetInfo){@>
+      			<@print(millisecondsToHHMMSSStr(summary.durations))@> Total Time&nbsp;&nbsp;<i class="icon ion-ios-clock-outline"></i>
+      		<@}@>
+      	</p>
+        </div>
+
+
+      	<@ $.each(item, function(index, value) { @>
+      	<div class="course-course-content-box" >
+      		<div class="course-content-blue-title <@if(value && value.contents){@> bg-primary <@}else if($('#'+id).closest('div.is-section').hasClass("is-bg-grey")){@>bg-white<@}else{@>is-bg-grey<@}@>" >
+                <span class="title-icon">
+      			<span class="material-icons <@if(value && !value.contents){@> text-primary <@}@>"><@ print(getCourseAssetIcon(value.type))@></span>
+      		  </span>
+      			<div class="titl5b" >
+      				<h3 class="<@if(value && !value.contents){@> text-primary <@}@>">
+      					<@print(value.title)@> <@ if(curriculumAssetInfo && value.type == 'pdf' && value.pages !== undefined && value.pages > 0) { @><small>(<@- value.pages @> pages)</small><@ } @>
+      					<@if(summary.sampleAvailable && summary.sampleSectionIds.includes(value.id)){@>
+      							<a href="/s/preview/courses/<@print(decodeURIComponent(summary.courseUrl).replace(/ /g,"-"))@>-<@- courseId @>#<@print(value.id)@>" class="previewBtn"><span class="<@if(value && !value.contents){@> text-primary <@}@>">Preview</span></a>
+      					<@}@>
+      				</h3>
+      		  		<p class="<@if(value && !value.contents){@> text-primary <@}@>"><@if(value && value.contents && curriculumAssetInfo){@>
+      						Sessions: <@print(value.contents)@>
+      					<@}@>
+      					<@if(value.moduleDurations && curriculumAssetInfo){@><@if(value && value.contents){@>|<@}@>
+      						Time: <@print(millisecondsToHHMMSSStr(value.moduleDurations))@>
+      					<@}@>
+      				<@if(value && value.contents>0){@><span class="material-icons">expand_more</span><@}@>  </p>
+      			</div>
+      		</div>
+      <@if(value && value.items){@>
+      	<@ $.each(value['items'], function(index1, value1) { @>
+      		<div class="course-content-body <@if(index==0){@>showing<@ }@>" >
+      				<div class="desc1 " >
+      				<div class="is-box-9" >
+      					<div class="boxa1" >
+      						<span class="material-icons text-primary"><@ print(getCourseAssetIcon(value1.type))@></span>
+      						<p> <@print(value1.title)@> <@ if(curriculumAssetInfo && value1.type == 'pdf' && value1.pages !== undefined && value1.pages > 0) { @><small>(<@- value1.pages @> pages)</small><@ } @>
+      			<@ if(value1.type == 'aiheading') { @><small>(coming soon)</small><@ } @>
+      			</p>
+
+      					</div>
+      				</div>
+      				<div class="is-box-1" >
+      					<div class="boxa2" >
+      						<@if(summary.sampleAvailable && summary.sampleSectionIds.includes(value1.id)){@>
+      								<a href="/s/preview/courses/<@print(decodeURIComponent(summary.courseUrl).replace(/ /g,"-"))@>#<@print(value1.id)@>">
+      						<@ if(value1.type == 'video') { @> Watch <@ } else {@> Preview <@ } @>
+      					</a>
+      						<@}@>
+      					</div>
+      				</div>
+      				<div class="is-box-2" >
+      					<div class="boxa2" >
+      						<p class="duration"><@if(value1.duration && curriculumAssetInfo){@><@print(millisecondsToHHMMSSStr(value1.duration))@><@}@></p>
+      					</div>
+      				</div>
+      				</div>
+      		</div>
+      	<@ }); @>
+      <@}@>
+      	</div>
+        <@ }); @>
+
+      </div>
+    </script>
+
+    <!-- Curriculum 3rd Template -->
+    <script type="text/template" id="coursecurr-3-template">
+        <div class="column full" spellcheck="false" data-gramm="false">
+           <div class="accordion-syllabus">
+      <@ $.each(item, function(index, value) { @>
+               <div class="accordion-syllabus-item">
+                   <header class="accordion-syllabus-header">
+                       <h4 class="accordion-syllabus-header__title">
+                           <span class="text-primary">
+      				<@if(index<9){@>
+      						0<@print(index+1)@>
+      					<@ } else {@>
+      						<@print(index+1)@>
+      				<@ } @>
+      			</span>
+                           <p><@print(value.title)@> <span class="text-primary show-sm" style="font-size: 14px;">
+      				<@if(value && value.items){@>
+      					<@ print(value.items.length) @> attachment(s)
+      				<@}@>
+      			<@if(value.moduleDurations && curriculumAssetInfo){@>
+      				<@if(value && value.contents){@> • <@}@>
+       						<@print(millisecondsToHHMMSSStr(value.moduleDurations))@>
+       					<@}@>
+      			</span></p>
+
+                       </h4>
+                       <div class="accordion-syllabus-header__info">
+                           <p class="text-primary hide-sm">
+      				<@if(value && value.items){@>
+      					<@ print(value.items.length) @> attachment(s)
+      				<@}@>
+      			<@if(value.moduleDurations && curriculumAssetInfo){@>
+      				<@if(value && value.contents){@> • <@}@>
+       						<@print(millisecondsToHHMMSSStr(value.moduleDurations))@>
+       					<@}@>
+      			</p>
+      			<@if(value && value.items){@>
+                           <div class="accordion-syllabus-header__icon text-primary">
+                               <i class="fa fa-angle-left" aria-hidden="true"></i>
+                           </div>
+      			<@}@>
+                       </div>
+                   </header>
+      	<@if(value && value.items){@>
+                   <div class="accordion-content" style="">
+                       <div class="accordian-content-block">
+                           <ul class="accordian-list">
+      				<@ $.each(value['items'], function(index1, value1) { @>
+                               <li class="accordian-list__item">
+                                   <div class="accordian-content-card">
+                                       <div class="accordian-content-card__info">
+                                           <div class="accordian-content-card__ico">
+      								<@ if(value1.type == 'code'){ @>
+      									<img src="/resources/images/CodeIcon.svg">
+      								<@ } else { @>
+      									<span class="material-icons text-primary">
+      										<@ print(getCourseAssetIcon(value1.type))@>
+      									</span>
+      								<@ } @>
+      							</div>
+                                           <div class="accordian-content-card__title">
+      								<@print(value1.title)@> <@ if(curriculumAssetInfo && value1.type == 'pdf' && value1.pages !== undefined && value1.pages > 0) { @><small>(<@- value1.pages @> pages)</small><@ } @>
+      								<@ if(value1.type == 'aiheading') { @><small>(coming soon)</small><@ } @>
+      							</div>
+                                       </div>
+                                       <div class="accordian-content-card__link">
+      							<@if(summary.sampleAvailable && summary.sampleSectionIds.includes(value1.id)){@>
+       										<a href="/s/preview/courses/<@print(decodeURIComponent(summary.courseUrl).replace(/ /g,"-"))@>-<@- courseId @>#<@print(value1.id)@>" class="previewBtn">
+      									<span class="text-primary">
+      										<@ if(value1.type == 'video') { @> Watch <@ } else {@> Preview <@ } @><span style="color:#000"><i class="fa fa-solid fa-arrow-up-right"></i></span>
+      									</span>
+      								</a>
+       									<@}@>
+                                       </div>
+                                   </div>
+                               </li>
+                       		<@ }); @>
+                           </ul>
+                       </div>
+                   </div>
+      <@ } @>
+               </div>
+              <@ }); @>
+           </div>
+       </div>
+    </script>
+
+    <!-- Curriculum 4th Template -->
+    <script type="text/template" id="coursecurr-4-template">
+         <div class="column full coursecurr4">
+      	<@ $.each(item, function(index, value) { @>
+      	<div class="accordion-syllabus-item">
+          <header class="accordion-syllabus-header" >
+              <h4 class="accordion-syllabus-header__title">
+                  <span>
+      				<@if(index<9){@>0<@print(index+1)@><@ } else {@> <@print(index+1)@> <@ } @>
+      			</span>
+                  <div class="accordion-syllabus-header__title-block" >
+                      <p style="font-size: 20px; font-weight: 700;">
+      					<@print(value.title)@>
+      				</p>
+                      <p class="text-primary" style="font-weight: 500; font-size: 14px; line-height: 150%; margin-top: 10px;">
+      					<@if(value && value.type == 'aiheading'){@>
+      						(coming soon)
+      					<@}@>
+      					<@if(value && value.items){@>
+      						<@ print(value.items.length) @> attachment(s)
+      					<@}@>
+      					<@if(value.moduleDurations && curriculumAssetInfo){@><@if(value && value.contents){@> • <@}@>
+          					<@print(millisecondsToHHMMSSStr(value.moduleDurations))@>
+          				<@}@>
+      				</p>
+                  </div>
+              </h4>
+      		<@if(value && value.items){@>
+              <div class="accordion-syllabus-header__info" >
+                  <div class="accordion-syllabus-header__icon" >
+                      <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  </div>
+              </div>
+      		<@ } @>
+          </header>
+      	<@if(value && value.items){@>
+          <div class="accordion-content"  style="">
+              <div class="accordian-content-block" >
+                  <ul class="accordian-list">
+      				<@ $.each(value['items'], function(index1, value1) { @>
+                      <li class="accordian-list__item">
+                          <div class="accordian-content-card" >
+                              <div class="accordian-content-card__info" >
+                                  <div class="accordian-content-card__ico" >
+      								<@ if(value1.type == 'code'){ @>
+      									<img src="/resources/images/CodeIcon.svg">
+      								<@ } else { @>
+      									<span class="material-icons text-primary">
+      										<@ print(getCourseAssetIcon(value1.type))@>262
+      									</span>
+      								<@ } @>
+      							</div>
+                                  <div class="accordian-content-card__title" >
+      								<@print(value1.title)@> <@ if(curriculumAssetInfo && value1.type == 'pdf' && value1.pages !== undefined && value1.pages > 0) { @><small>(<@- value1.pages @> pages)</small><@ } @>
+      								<@ if(value1.type == 'aiheading') { @><small>(coming soon)</small><@ } @>
+      							</div>
+                              </div>
+                              <div class="accordian-content-card__link" >
+      							<@if(summary.sampleAvailable && summary.sampleSectionIds.includes(value1.id)){@>
+                                  <a href="/s/preview/courses/<@print(decodeURIComponent(summary.courseUrl).replace(/ /g,"-"))@>-<@- courseId @>#<@print(value1.id)@>" class="previewBtn">
+      								<span class="text-primary">
+      									<@ if(value1.type == 'video') { @> Watch <@ } else {@> Preview <@ } @> <span style="color:#000"><i class="fa fa-solid fa-arrow-up-right"></i></span>
+      								</span>
+      							</a>
+      							<@ } @>
+                              </div>
+                          </div>
+                      </li>
+      				<@ }); @>
+                  </ul>
+      		</div>
+      	</div>
+      	<@ } @>
+        </div>
+       <@ }); @>
+      </div>
+    </script>
+
+    <!-- Feedback Template First -->
+    <script type="text/template" id="widget-1-template">
+      <div class="column full feedbackContainer feedback1 spectre">
+      <@if(msg){@>
+      	<h4 style="letter-spacing: 2px; text-align: center;"><@print(msg)@></h4>
+      <@}else{@>
+      <div class="avgratingbox">
+        <div class="flex-row" >
+              <div class="is-box-2" >
+                 <p style="color: rgb(247, 247, 247); font-weight: 700!important; font-size: 40px!important; text-align: center; letter-spacing: 3px; padding-bottom: 0px; margin-bottom: 0px; line-height: 1; margin-top: 0px;">
+      			<@ if(ratings && ratings.avgRating) {@>
+      				<@ print(parseFloat(ratings.avgRating.toFixed(1))) @>
+      			<@}else{@>
+      				0
+      			<@}@>
+      		  </p>
+                <h5 class="ratings1" style="text-align: center; margin-bottom: 0px; margin-top: 0px; line-height: 1;">
+                <@ for (ratingsSize = 1; ratingsSize <= 5; ratingsSize++) {@>
+      					<@if(ratings){@>
+      						<@ if(ratings.avgRating >= ratingsSize) {@>
+      							<i class="icon ion-android-star"></i>&nbsp;
+      						<@ } else if(ratings.avgRating > ratingsSize-1 && ratings.avgRating < ratingsSize) { @>
+      							<i class="icon ion-android-star-half"></i>&nbsp;
+      						<@ } else { @>
+      							<i class="icon ion-android-star-outline"></i>&nbsp;
+      						<@ } @>
+      					<@} else {@>
+      						<i class="icon ion-android-star-outline"></i>&nbsp;
+      					<@}@>
+      		  <@}@>
+                </h5>
+                <p style="margin: 10px 0 0 !important;text-align: center;line-height: 1;font-size: 30px!important;"><i class="fa-light fa-users t-white"></i> </p>
+                <p style="margin-bottom: 10px; margin-top: 0px; font-size: 12px!important; letter-spacing: 1px; font-weight: 500!important; color: rgb(247, 247, 247); text-align: center;">
+      			Total <@ if(ratings){print(ratings.total) }else{0}@> Reviews
+      		  </p>
+              </div>
+              <div class="is-box-9">
+      			<@ for (i = 0; i < 5; i++) {@>
+      				<div class="box7878">
+                  <div style="flex:1;">
+      					<div class="meter <@print(ratingsPer[(parseInt(i)+1)+'-star'].cls)@> nostripes">
+                        		<span style="width: <@print(ratingsPer[(parseInt(i)+1)+'-star'].rates)@>%"></span>
+                     		</div>
+                  </div>
+                  <div id="ratingbox">
+                    <p class="ratings2" style=" line-height: 1;">
+      				<@ for (ratingsSize = 5; ratingsSize >=1; ratingsSize--) {@>
+      						<@if(ratingsSize>i){@>
+      							<i class="fa fa-solid fa-star-sharp text-primary"></i>&nbsp;
+      						<@} else {@>
+      							<i class="fa fa-solid fa-star-sharp"></i>&nbsp;
+      						<@}@>
+      				<@}@>
+                     <span class="t-white">
+      					<@ if(ratings && ratings.ratingsCount){print(ratings.ratingsCount[(parseInt(5)-i)+'-stars'])}else{0} @>
+      			   </span>
+                    </p>
+
+                  </div>
+                </div>
+      	  	<@}@>
+              </div>
+        	</div>
+      </div>
+      	<div class="bg-secondary" style="padding:15px 15px;border-radius:10px;border-top-right-radius: 0;border-top-left-radius: 0;" >
+      		<p
+      			style="font-size: 16px!important; font-weight: 500!important; letter-spacing: 1px;" class="text-primary">
+      			Reviews
+      		</p>
+
+      <div class="review-box" id="createCustomReview" style="display:none">
+      <div class="flex-row">
+      	<div class="is-box-2 centerbox">
+      		<div class="spectre">
+      			<figure data-initial="<@if(typeof SPUSER !== 'undefined'){print(SPUSER.email.substring(0, 1))}else{@>Me<@}@>" class="uppercase avatar avatar-lg figsize" >
+      				<img src="/s/profile/thumb" alt="" class="review-pic" onerror="profileImageError(this)" data-mhash="<@ if(typeof SPUSER !== 'undefined'){print(SPUSER.mhash)} @>">
+      			</figure>
+      			<@if(typeof SPUSER !== 'undefined'){ @><p class="review-name"><@ print(SPUSER.name) @> </p><@ } @>
+      		</div>
+      	</div>
+      	<div class="is-box-10">
+      		<textarea rows="3" class="form-input"
+      			placeholder="Add your review here"></textarea>
+      		<div class="rating3">
+      			<p id="rating-stars">
+      				<@ for (ratingsSize = 1; ratingsSize <= 5; ratingsSize++) {@> <i
+      					class="fa fa-solid fa-star-sharp text-primary rating-star" data-value='<@- ratingsSize @>'></i> <@}@>
+      			</p>
+
+      			<button class="btn btn-primary <@ if(typeof SPUSER !== 'undefined'){ print('createCustomReviewBtn') }else { print('loginBtn') } @>"
+      				data-reviewData="reviewlist"
+      				style="padding: 2px 28px; text-transform: uppercase; border-radius: 40px;">Post</button>
+      		</div>
+      	</div>
+      </div>
+      </div>
+
+      	<div id="reviewlist">
+      	<@ $.each(items, function(index, item) { @>
+      	<div class="review-box reviewcontainer <@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @>selfreview<@ } @>">
+      		<@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @>
+      			<a class="btn btn-link float-right deleteCurrentReviewBtn" data-id="<@ print(item['_id']) @>"><i class="material-icons">delete</i></a>
+      		<@ } @>
+      		<div class="flex-row">
+      			<div class="is-box-2 centerbox">
+      				<div class="spectre">
+      					<@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @>
+      						<figure data-initial="<@if(typeof SPUSER !== 'undefined'){print(SPUSER.email.substring(0, 1))}else{@>Me<@}@>" class="uppercase avatar avatar-lg figsize" >
+      							<img src="/s/profile/thumb" alt="" class="review-pic" onerror="profileImageError(this)" data-mhash="<@ if(typeof SPUSER !== 'undefined'){print(SPUSER.mhash)} @>">
+      					<@ } else {@>
+      					<figure data-initial="<@ print(getUserInitial(null, item.userName)) @>" class="uppercase avatar avatar-lg figsize" >
+      						<img src="/s/profile/<@- item.userId @>/thumb" alt="" class="review-pic" onerror="profileImageError(this)" data-mhash="<@ item.mhash @>">
+      					<@ } @>
+      					</figure>
+      					<p class="review-name"><@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @><@ print(SPUSER.name) @><@ } else {@>	<@ print(item.userName) @><@ } @>	</p>
+      				</div>
+      			</div>
+      			<div class="is-box-10">
+      				<div class="rating4">
+      					<p>
+      						<@ for (ratingsSize = 1; ratingsSize <= 5; ratingsSize++) {@> <@
+      						if(item.rating >= ratingsSize) {@>
+      							<i class="fa fa-solid fa-star-sharp text-primary"></i>
+      						<@ } else if(item.rating > ratingsSize-1 && item.rating < ratingsSize) { @>
+      							<i class="fa fa-solid fa-star-sharp-half text-primary"></i>
+      						<@ } else { @>
+      							<i class="fa fa-solid fa-star-sharp"></i>
+      						<@}@>
+      						<@ }@>
+      					</p>
+      					<p
+      						style="font-size: 13px!important; color: rgb(174, 170, 170); font-weight: 600!important; margin-top: 4px;">
+      						<time class="timestamp"
+      							datetime="<@ print((new Date(item.createdDate.$date)).toISOString()) @>"><@
+      							print(parseDate(item.createdDate.$date)) @></time>
+      					</p>
+      				</div>
+      				<p  class="reviewTxt"
+      					style="color: rgb(102, 102, 102); font-weight: 500!important; font-size: 13px!important; margin-bottom: 10px;"><@
+      					print(item.reviewtext.replace(/</g,'&lt;').replace(/>/g,'&gt;')) @></p>
+      				<div class="comment-tag">
+      					<@ if(item.isFeatured) {@><span>Featured Review </span><@ } @><@ if(item.isVerifiedPurchase) {@> <span>Verified Purchase </span><@ } @>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+      	<@ }); @>
+      	</div>
+      	<button class="bg-primary loadMoreReviewsBtn reviewLMbtn" data-itemTemplate="feedback-1-item-template" data-reviewData="reviewlist" >Load More Reviews</button>
+      </div>
+      <@}@>
+    </script>
+
+    <script type="text/template" id="feedback-1-item-template">
+      <div class="review-box reviewcontainer <@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @>selfreview<@ } @>"">
+      <@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @>
+      	<a class="btn btn-link float-right deleteCurrentReviewBtn" data-id="<@ print(item['_id']) @>"><i class="material-icons">delete</i></a>
+      <@ } @>
+      <div class="flex-row">
+      	<div class="is-box-2 centerbox">
+      		<div class="spectre">
+      			<@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @>
+      				<figure data-initial="<@if(typeof SPUSER !== 'undefined'){print(SPUSER.email.substring(0, 1))}else{@>Me<@}@>" class="avatar avatar-lg figsize" >
+      					<img src="/s/profile/thumb" alt="" class="review-pic" onerror="profileImageError(this)" data-mhash="<@ if(typeof SPUSER !== 'undefined'){print(SPUSER.mhash)} @>">
+      			<@ } else {@>
+      			<figure data-initial="<@ print(getUserInitial(null, item.userName)) @>" class="avatar avatar-lg figsize" >
+      				<img src="/s/profile/<@- item.userId @>/thumb" alt="" class="review-pic" onerror="profileImageError(this)" data-mhash="<@ item.mhash @>">
+      			<@ } @>
+      			</figure>
+      			<p class="review-name"><@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @><@ print(SPUSER.name) @><@ } else {@>	<@ print(item.userName) @><@ } @>	</p>
+      		</div>
+      	</div>
+      	<div class="is-box-10">
+      		<div class="rating4">
+      			<p>
+      				<@ for (ratingsSize = 1; ratingsSize <= 5; ratingsSize++) {@> <@
+      				if(item.rating >= ratingsSize) {@>
+      					<i class="fa fa-solid fa-star-sharp text-primary"></i>
+      				<@ } else if(item.rating > ratingsSize-1 && item.rating < ratingsSize) { @>
+      					<i class="fa fa-solid fa-star-sharp-half text-primary"></i>
+      				<@ } else { @>
+      					<i class="fa fa-solid fa-star-sharp-outline"></i>
+      				<@}@>
+      				<@ } @>
+      			</p>
+      			<p
+      				style="font-size: 13px!important; color: rgb(174, 170, 170); font-weight: 600!important; margin-top: 4px;">
+      				<time class="timestamp"
+      					datetime="<@ print((new Date(item.createdDate.$date)).toISOString()) @>"><@
+      					print(parseDate(item.createdDate.$date)) @></time>
+      			</p>
+      		</div>
+      		<p  class="reviewTxt"
+      			style="color: rgb(102, 102, 102); font-weight: 500!important; font-size: 13px!important; margin-bottom: 10px;"><@
+      			print(item.reviewtext.replace(/</g,'&lt;').replace(/>/g,'&gt;')) @></p>
+      		<div class="comment-tag">
+      			<@ if(item.isFeatured) {@><span>Featured Review </span><@ } @><@ if(item.isVerifiedPurchase) {@> <span>Verified Purchase </span><@ } @>
+      		</div>
+      	</div>
+      </div>
+      </div>
+    </script>
+
+    <!-- Feedback Template Second -->
+    <script type="text/template" id="feedback-2-template">
+      <div class="column full feedbackContainer feedback2 spectre <@- total @>" style="padding: 0;">
+      <@if(msg){@>
+      	<h4 style="letter-spacing: 2px; text-align: center;"><@print(msg)@></h4>
+      <@}else{@>
+      <@ if(total > 0 && ratings && ratings.avgRating) {@>
+      <div class="avgratingbox">
+      <div class="column third">
+         <div class="is-card avgRatingContainer">
+            <div class="avgRatingInnerContainer">
+               <h3 style="font-weight: 800; font-size: 12px; line-height: 1.3; margin-bottom: 0px;">Customer ratings</h3>
+               <div  style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                  <i class="icon ion-android-star text-primary" style="font-size: 80px;"></i>
+                  <div style="margin-left: 25px;">
+                     <span style="display: flex; justify-content: flex-start; align-items: baseline;">
+                        <h3 style="margin-top: 0px; margin-bottom: 0px; font-size: 32px; font-weight: 800; color: var(--themeColor); line-height: 1.3;">
+                           <@ if(ratings && ratings.avgRating) {@>
+                           <@ print(parseFloat(ratings.avgRating.toFixed(1))) @>
+                           <@}else{@>
+                           0
+                           <@}@>
+                        </h3>
+                        <p class="avgRatingReviews">/5</p>
+                     </span>
+                     <p class="avgRatingReviews">
+                        <@ if(ratings){print(ratings.total) }else{0}@> reviews
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <@ } @>
+      <div id="feedback2Reviewlist" class="reviewslist">
+         <@ $.each(items, function(index, item) { @>
+         		<@ var template = _.template($("#feedback-2-item-template").html()); print(template({item: item})) @>
+         <@ }); @>
+         <@}@>
+      </div>
+      <div class="row clearfix">
+         <div class="column full">
+            <p class="loadMoreReviewsBtn reviewLMbtn text-primary" data-itemTemplate="feedback-2-item-template" data-reviewData="feedback2Reviewlist" style="text-align: right; font-size: 14px; font-weight: 500;cursor: pointer;line-height: 1.5;display: none;">
+               View more
+            </p>
+         </div>
+      </div>
+    </script>
+
+    <script type="text/template" id="feedback-2-item-template">
+      <div class="column third reviewcontainer <@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @>selfreview<@ } @>">
+           <div class="is-card avgRatingContainer">
+              <div style="text-align: center; display: flex; flex-direction: column; align-items: flex-start;" >
+      		<@ if(typeof SPUSER !== 'undefined' && item["userId"] === SPUSER.id)	{ @>
+      			<a class="btn btn-link float-right deleteCurrentReviewBtn" data-id="<@ print(item['_id']) @>"><i class="material-icons">delete</i></a>
+      		<@ } @>
+                 <p class="reviewTxt" style="font-size: 14px; font-weight: 400; line-height: 1.5; margin-bottom: 25px; margin-top: 0px; min-height: 80px; max-height: 80px; overflow: hidden;">
+        			<@ print(item.reviewtext.replace(/</g,'&lt;').replace(/>/g,'&gt;')) @>
+        		 	</p>
+      		<div class="reviewerName">
+                	<p style="font-size: 12px; font-weight: 500; line-height: 1.3;  text-align: left; padding-top: 0px; margin:0px;">
+        				<@ print(item.userName) @>
+        		 	</p></div>
+
+      		 <p style="margin: 0px;">
+      			<@ for (ratingsSize = 1; ratingsSize <= 5; ratingsSize++) {@>
+      				<@ if(item.rating >= ratingsSize) {@>
+      					<i class="fa fa-solid fa-star-sharp text-primary"></i>
+      				<@ } else if(item.rating > ratingsSize-1 && item.rating < ratingsSize) { @>
+      					<i class="fa fa-solid fa-star-sharp-half text-primary"></i>
+      				<@ } @>
+      			<@ }@>
+      		 </p>
+
+           	 </div>
+        </div>
+        </div>
+    </script>
+
+    <!-- <script type="text/template" id="feedback-2-createTemplate">
+      	<div data-cat="1" class="is-section is-box is-section-20" id="createCustomReview" style="display: none;" data-id="<@- parentId @>">
+        <div class="is-boxes">
+          <div class="is-box-centered">
+            <div class="is-container container" style="max-width: 940px;">
+
+      		<div class="review-box review-add-box">
+                  <div class="is-container container is-content-800" >
+                     <div class="row clearfix" >
+                        <div class="column full" >
+                           <h1 style="text-align: center; font-size: 28px; line-height: 1.1; font-weight: 700; letter-spacing: 0px; color: var(--themeColor); margin-bottom: 44px;">Add a review</h1>
+                        </div>
+                     </div>
+                     <div class="textarea-cont">
+                        <div class="review-star text-primary" style="display: flex; flex-direction: row; align-items: center; padding-top: 0px; margin-top: 0px;">
+      					<span id="rating-stars">
+                           <@ for (ratingsSize = 1; ratingsSize <= 5; ratingsSize++) {@> <i
+                              class="fa fa-solid fa-star-sharp rating-star" data-value='<@- ratingsSize @>'></i> <@}@>
+      					</span>
+                        </div>
+                        <textarea class="add-review-textarea" id="reviewText" style="background: transparent;width: 100%; border-width: 0px; padding-right: 28px; padding-bottom: 28px; min-height: 150px; font-size: 14px; font-weight: 500; line-height: 1.5; padding-top: 10px;" placeholder="Add your review here"></textarea>
+                        <@ if(typeof SPUSER !== 'undefined' && SPUSER.name.length > 0)	{ @>
+      						<p style="font-weight: 400; font-size: 10px; line-height: 1.3; color: rgba(255, 255, 255, 0.5); margin-top: 0px;"><@ print(SPUSER.name) @></p>
+      				<@ } @>
+                     </div>
+                     <div  style="margin-top: 20px; display: flex; justify-content: flex-end;">
+                        <button id="reviewSubmitBtn" class="btn btn-primary <@ if(typeof SPUSER !== 'undefined'){ print('createCustomReviewBtn') }else { print('loginBtn') } @>"
+      					data-reviewData="feedback2Reviewlist" disabled >Submit</button>
+                     </div>
+                  </div>
+      		</div>
+      		</div>
+      		</div>
+      	</div>
+      </div>
+    </script> -->
+
+    <!-- <div class="spectre">
+      <div class="modal" id="reviewModal">
+        <a
+          href="javascript:void(0);"
+          class="modal-overlay close"
+          aria-label="Close"
+        ></a>
+        <div class="modal-container">
+          <div class="modal-header">
+            <a
+              href="javascript:void(0);"
+              class="close btn btn-clear float-right"
+              aria-label="Close"
+            ></a>
+            <div class="modal-title h5">Review</div>
+          </div>
+          <div
+            class="modal-body"
+            style="max-height: 90vh; padding-top: 0"
+          ></div>
+        </div>
+      </div>
+    </div> -->
+
+    <script>
+      var created_date = `Created Date`;
+      var uname_msg = `Name`;
+      var email_msg = `Email`;
+      var has_web_token = `Has Web Token`;
+      var has_mobile_token = `Has Mobile Token`;
+      var actions_msg = `Actions`;
+      var delete_user = `Delete User`;
+      var create_target_audience = `Create Target Audience`;
+      var msg_now = `NOW`;
+      var msg_now_2 = `Now`;
+      var msg_scheduled = `SCHEDULED`;
+      var msg_recurring = `RECURRING`;
+      var msg_weeks = `weeks`;
+      var msg_months = `month(s)`;
+      var msg_days = `days`;
+      var notification_screen = `Notification Screen`;
+      var coursepackagelandingpage = `Course/Package landing page`;
+      var search_course_name = `Search by course/package name`;
+      var webinar_landing_page = `Webinar landing page`;
+      var search_by_webinar_name = `Search by webinar name`;
+      var categorypage = `Category Page`;
+      var custompage = `Custom Page`;
+      var blogpage = `Blog Page`;
+      var customlink = `Custom Link`;
+      var homepage_msg = `Homepage`;
+      var search_category = `Search category`;
+      var search_page_title = `Search by Page title`;
+      var search_blog_title = `Search by Blog title`;
+      var enter_the_link = `Enter the link`;
+      var membership_page = `Membership page`;
+      var pick_a_date = `Pick a date`;
+      var pick_first_push_date = `Pick a first push date`;
+      var every_msg = `Every`;
+      var starting_msg = `Starting`;
+      var msg_published = `Published`;
+      var msg_unpublished = `Unpublished`;
+      var msg_customize = `Customize`;
+      var msg_edit = `Edit`;
+      var msg_featured_image = `Featured Image`;
+      var msg_preview = `Preview`;
+      var msg_delete = `Delete`;
+      var msg_unpublish = `Unpublish`;
+      var msg_publish = `Publish  `;
+      var msg_question = `questions`;
+      var try_new_coding_assignment = `Try new coding assignment`;
+      var change_enrollment_date = `Change Enrollment Date`;
+      var change_expiry = `Change Expiry`;
+      var change_remanining_time = `Change Remaining Time`;
+      var remove_from_course = `Remove From Course`;
+      var reset_course_progress = `Reset Course Progress`;
+      var complete_report = `Complete Report`;
+      var msg_progress = `Progress`;
+      var timetaken = `Time Taken`;
+      var msg_user_details = `User Details`;
+      var graphy_platform_fees_note = `Amount after deducting Graphy platform fees. This does not include your payment gateway charges.`;
+      var final_price_note = `Final payable price by learners`;
+      var save_alert_message = `Save progress before moving forward.`;
+      var no_chapter_alert_message = `Please add at least one chapter in the course.`;
+      var download_msg = `Download`;
+      var revoke_msg = `Revoke`;
+      var yes_msg = `Yes`;
+      var no_msg = `No`;
+      var details_hover = `Details`;
+      var hide_notification = `Hide Notification`;
+      var notify_learners_hover = `Notify Learners`;
+      var search_course_package = `Search Courses to add in this package.`;
+      var bulk_delete = `Bulk Delete`;
+      var scheduled_msg = `Scheduled`;
+      var inprogress_msg = `In Progress`;
+      var completed_msg = `Completed`;
+      var yes_all_caps = `YES`;
+      var no_all_caps = `NO`;
+      var discount_msg = `Discount`;
+      var max_discount = `Max Discount`;
+      // var min_cart = `Min Cart`;
+      var delete_bookmark = `Delete Bookmark`;
+      var view_question = `View question`;
+      var msg_free = `Free`;
+      var membership_expiration_note = `Membership will be canceled on next billing date.`;
+      var msg_active = `Active`;
+      var msg_inactive = `Inactive`;
+      var delete_hover = `Delete`;
+      var view_hover = `View`;
+      var coursewise = `Course Wise`;
+      var learner_wise = `Learner wise`;
+      var segment_wise = `Segment wise`;
+      var unregistered_msg = `Unregistered`;
+      var target_audience_deleted = `Target Audience Deleted`;
+      var courses_msg = `course(s)`;
+      var learners_msg = `learner(s)`;
+      var unregistered_learners = `Unregistered Learner`;
+      var all_learners = `All Learners`;
+      var course_wise_learners = `Course wise Learners`;
+      var segment_wise_learners = `Segment wise Learners`;
+      var with_token = `with token`;
+      var segments_msg = `segments`;
+      var add_users_msg = `Add Users`;
+      var approx_msg = `Approx`;
+      var revoke_cancellation_request = `Revoke Cancellation request.`;
+      var remove_scheduled_membership_cancellation = `Remove Scheduled Membership Cancellation`;
+      var schedule_to_stop_subscription = `Schedule to stop Subscription`;
+      var stop_subscription = `Stop subscription`;
+      var available_for_review_all_caps = `AVAILABLE FOR REVIEW`;
+      var reviewed_all_caps = `REVIEWED`;
+      var rejected_all_caps = `REJECTED`;
+      var preview_code = `Preview Code`;
+      var approve_msg = `Approve`;
+      var reject_msg = `Reject`;
+      var history_msg = `History`;
+      var message_hover = `Message`;
+      var remove_msg = `Remove`;
+      var enroll_msg = `Enroll`;
+      var change_validity = `Change Validity`;
+      var learners_selected = `learner(s) selected`;
+      var select_all_msg = `Select all`;
+      var do_you_want_to_delete_course = `Do you really want to delete this course?`;
+      var do_you_want_to_revoke_this_certificate = `Do you really want to revoke this certificate?`;
+      var do_you_want_to_revoke_entry = `Do you really want to revoke this entry?`;
+      var do_you_want_to_edit_enrollment_date = `Do you really want to edit enrollment date of all learners?`;
+      var do_you_want_to_edit_enrollment_date_for_selected = `Do you really want to edit enrollment date of selected learners?`;
+      var do_you_want_to_edit_course_validity = `Do you really want to edit course validity of all learners?`;
+      var do_you_want_to_edit_course_validity_for_selected = `Do you really want to edit course validity of selected learners?`;
+      var do_you_want_to_remove_selected = `Do you really want to remove selected learners?`;
+      var do_you_want_to_remove_all = `Do you really want to remove all learners?`;
+      var do_you_want_to_create_zip = `Do you really want to create zip for this course?`;
+      var do_you_want_to_deactivate = `Do you really want to deactivate?`;
+      var successfully_done_alert = `Successfully Done.`;
+      var please_select_atleast_1_learner = `Please select atleast 1 learner !`;
+      var on_msg = `On`;
+      var single_correct_option = `Single Correct Option`;
+      var multiple_correct_options = `Multiple Correct Options`;
+      var numerical_Fill_in_the_Blank = `Numerical/Fill in the Blank`;
+      var match_the_Column = `Match the Column`;
+      var subjective = `Subjective`;
+      var your_target_audience_appear = `Your target audience user(s) will appear here`;
+      var your_upcoming_campaign = `Your upcoming campaign will appear here`;
+      var status_msg = `Status`;
+      var stop_campaign = `Stop Campaign`;
+      var copy_campaign = `Copy Campaign`;
+      var platform_fee_tax = `platform fees including taxes`;
+      var pg_fees_taxes = `payment gateway fees including taxes`;
+      var msg_quiz = `Quiz`;
+      var msg_livetest = `Live test`;
+      var msg_heading = `Heading`;
+      var msg_text = `Text`;
+      var msg_form = `Form`;
+      var msg_live_class = `Live class`;
+      var msg_live_class_rec = `live class recording`;
+      var msg_code = `Code`;
+      var msg_assignment = `Assignment`;
+      var msg_added = `added`;
+      var msg_about = `About`;
+      var msg_year = `year`;
+      var msg_month = `Month`;
+      var msg_day = `day`;
+      //var msg_hour = `hh`;
+      //var msg_minute = `mm`;
+      //var msg_seconds = `seconds`;
+      var msg_month_l = `month`;
+      var msg_day_l = `day`;
+      var msg_hour_l = `hour`;
+      var msg_minute_l = `minute`;
+      var msg_second_l = `second`;
+      var mobile_number = `Mobile Number`;
+      var status_android = `Status (ANDROID)`;
+      var status_ios = `Status (IOS)`;
+      var delivery_time = `Delivery Time`;
+      var sure_unhide = `Are you sure you want to unhide this course ?`;
+      var become_a_partner = `Become a Partner`;
+      var failed_msg = `Failed`;
+      var sent_msg = `Sent`;
+      var pending_msg = `Pending`;
+      var running_msg = `Running`;
+      var add_pricing_plan = `Add pricing plan`;
+      var msg_add = `Add`;
+      var of_msg = `of`;
+      var items_msg = `items`;
+      var ago_msg = `ago`;
+      var items_msg = `items`;
+
+      var january_msg = `January`;
+      var february_msg = `February`;
+      var march_msg = `March`;
+      var april_msg = `April`;
+      var may_msg = `May`;
+      var june_msg = `June`;
+      var july_msg = `July`;
+      var august_msg = `August`;
+      var september_msg = `September`;
+      var october_msg = `October`;
+      var november_msg = `November`;
+      var december_msg = `December`;
+      var sunday_msg = `Sunday`;
+      var monday_msg = `Monday`;
+      var tuesday_msg = `Tuesday`;
+      var wednesday_msg = `Wednesday`;
+      var thursday_msg = `Thursday`;
+      var friday_msg = `Friday`;
+      var saturday_msg = `Saturday`;
+      var at_msg = `at`;
+      var generate_outline = `Generate outline using AI`;
+      var it_take_min = `It may take a min.`;
+      var msg_ok = `OK`;
+      var edit_pricing_plan = `Edit pricing plan`;
+    </script>
+
+    <!-- <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/jquery-2.0.3.min.js"></script>
+
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/underscore-min.js?v=1.9.1"></script>
+
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/jquery.form.js"></script>
+    <script
+      async
+      src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/jquery.noty.packaged.min.js"
+    ></script>
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/jquery-ui.min.js"></script>
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/jquery.timeago.js"></script>
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/js-webshim/minified/extras/modernizr-custom.js"></script>
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/jquery.datetimepicker.js"></script>
+
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/aes.js"></script>
+    <script
+      async
+      src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/mode-ecb-min.js"
+    ></script>
+    <script
+      async
+      src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/pad-nopadding-min.js"
+    ></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <script type="text/javascript">
+      var passwordPolicyRequired = true;
+      var checkoutV2 = false;
+      var orgLanguageCode = "";
+    </script> -->
+
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/staticfiles/resources/scripts/sutils_d3c1d328fe242a0be16fc06f3c8699d6.js"></script>
+
+    <script type="text/javascript">
+      var trialExpired = "false";
+      var planCancelled = "false";
+      var isFreePlan = false;
+    </script>
+    <script type="text/javascript" id="dsf239df">
+      var ctx = "/s",
+        isFirstLogin = "",
+        cjs = CryptoJS;
+
+      var defaultCoreColor = "#5755d9",
+        theme1CoreColor = "#572b7a",
+        theme2CoreColor = "#3f51b5",
+        theme3CoreColor = "#009051",
+        theme4CoreColor = "#596439",
+        theme5CoreColor = "#F0591D",
+        theme6CoreColor = "#28a745",
+        theme7CoreColor = "#1bbc9b",
+        theme8CoreColor = "#f38f20",
+        apkId =
+          "6231373432363038663465653864613562313734323630386634656538646135",
+        theme9CoreColor = "#c0af01",
+        theme10CoreColor = "#e8d3a4",
+        webColor = defaultCoreColor,
+        CFCDN = "https://dz8fbjd9gwp2s.cloudfront.net",
+        mobileNotification = true,
+        webNotification = true,
+        iosPlayVideo = false,
+        gaType = "ga4";
+
+      $("#dsf239df").remove();
+    </script>
+
+    <input type="hidden" id="orgCurrencyCode" value="INR" />
+
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/detect-private-browsing.js"></script>
+    <script type="text/javascript">
+      detectPrivateMode(function (is_private) {
+        if (typeof is_private !== "undefined" && is_private) {
+          $("input[name=privateMode]").val("private");
+        }
+      });
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/intlTelInput.min.js"
+    ></script>
+    <script type="text/javascript">
+      var ipInfo = localStorage.getItem("ipInfo");
+      if (!ipInfo) {
+        $.get("https://ipinfo.io", function () {}, "jsonp").always(function (
+          resp
+        ) {
+          if (resp) {
+            var ipInfoStr = JSON.stringify(resp);
+            var ipInfoField = document.getElementById("ipInfo");
+            var countryCode = resp.country ? resp.country : "in";
+            sessionStorage.setItem("countryCode", countryCode);
+            if ("statusText" in resp) {
+              if (resp["statusText"] !== "error" && "ip" in resp) {
+                localStorage.setItem("ipInfo", ipInfoStr);
+                if (ipInfoField) {
+                  ipInfoField.value = ipInfoStr;
+                }
+              }
+            } else if ("ip" in resp) {
+              localStorage.setItem("ipInfo", ipInfoStr);
+              if (ipInfoField) {
+                ipInfoField.value = ipInfoStr;
+              }
+            }
+          }
+        });
+      }
+
+      $("#sphone").intlTelInput({
+        initialCountry: "auto",
+        geoIpLookup: function (callback) {
+          var scountryCode = sessionStorage.getItem("countryCode");
+
+          if (scountryCode !== null) {
+            callback(scountryCode);
+          } else {
+            $.get("https://ipinfo.io", function () {}, "jsonp").always(
+              function (resp) {
+                var countryCode = resp && resp.country ? resp.country : "in";
+                callback(countryCode);
+                sessionStorage.setItem("countryCode", countryCode);
+              }
+            );
+          }
+        },
+        preferredCountries: ["in", "us"],
+        separateDialCode: true,
+        utilsScript: "/resources/js/intlUtils.js",
+      });
+    </script>
+
+    <div class="spectre">
+      <script type="text/javascript">
+        if (top != self) {
+          //iframe
+          $(".toast").remove();
+        }
+      </script>
+    </div>
+
+    <!--Start of Tawk.to Script-->
+    // This generates the Chat Section
+    <!-- <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/64a29ccb94cf5d49dc613524/1h4dj8vp3";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script> -->
+    <!--End of Tawk.to Script-->
+
+    <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-P68C8XS"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript> -->
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+      document.addEventListener(
+        "click",
+        function (e) {
+          if (
+            e.target.matches('a[href*="/s/checkout"], a[href*="/s/checkout"] *')
+          ) {
+            gtag("event", "checkout_clicked");
+          }
+          if (e.target.matches(".card .card-footer, .card .card-footer *")) {
+            gtag("event", "buy_now_clicked");
+          }
+          if (e.target.matches(".loginBtn")) {
+            gtag("event", "login_clicked");
+          }
+        },
+        true
+      );
+    </script>
+
+    <script>
+      if (location.href.indexOf("/blog/") > -1) {
+        var script = document.createElement("script");
+        script.setAttribute(
+          "src",
+          "//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f0819381c3cfc1d"
+        );
+        document.body.appendChild(script);
+      }
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Ads: 10880038142 -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-10880038142"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-10880038142");
+    </script> -->
+
+    <!-- <script>
+      $(".signupForm #normalLoginBtn").before(
+        "<div>In case of OTP issues, kindly drop an email at techsupport@rachanaranade.com OR WhatsApp on +91 703 852 2462</div>"
+      );
+    </script> -->
+
+    <script>
+      document.addEventListener("click", function (e) {
+        if (
+          e.target.closest("button").innerText.includes("Create New Account")
+        ) {
+          gtag("event", "create_new_account_btn");
+        }
+        if (e.target.closest("button").innerText.includes("Submit")) {
+          gtag("event", "submit_btn");
+        }
+        if (e.target.closest("button").innerText.includes("APPLY")) {
+          gtag("event", "apply_btn");
+        }
+      });
+      document.addEventListener(
+        "click",
+        function (e) {
+          if (e.target.closest("a>span").innerText.includes("Next")) {
+            gtag("event", "next_btn");
+          }
+        },
+        true
+      );
+      // document.addEventListener(
+      //   "click",
+      //   function (e) {
+      //     if (e.target.closest("a").innerText.includes("Proceed to Payment")) {
+      //       gtag("event", "payment_btn");
+      //     }
+      //   },
+      //   true
+      // );
+    </script>
+
+    <input type="hidden" id="orgCreditAlias" value="CARR Credits" />
+
+    <script>
+      var orgTaxLabel = "GST";
+
+      var sessionCountry = "IN";
+
+      $(document).ready(function () {
+        $("input[name='userMobileVerify']").change(function (data) {
+          var uniqueMobileSwitch = $("#uniqueMobileId");
+          if (data.target.value === "true") {
+            $("input[name=uniqueMobile]").prop("checked", true);
+            $("#uniqueMobileLabelId").show();
+          } else {
+            $("input[name=uniqueMobile]").prop("checked", false);
+            $("#uniqueMobileLabelId").hide();
+          }
+        });
+      });
+
+      localStorage.removeItem("microserviceAuthToken");
+
+      localStorage.removeItem("communityToken");
+
+      localStorage.removeItem("chatRefreshToken");
+
+      localStorage.removeItem("refreshToken");
+    </script>
+
+    <!-- amplitude script start -->
+
+    <script type="text/javascript">
+      window.localStorage.removeItem("loginAmplitudeEventSent");
+    </script>
+
+    <!-- amplitude script end -->
+
+    <div id="template-container"></div>
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/staticfiles/resources/scripts/sstore_4d1620a903056f902d057dfe0a7054f2.js"></script>
+    <script type="text/javascript">
+      store.bindEvents();
+    </script>
+    <script type="text/javascript">
+      window.signupParams = {
+        source: "landing_page",
+        platform: "web",
+        sourceId: null,
+      };
+    </script>
+    <div class="containerBody is-wrapper clearfix" style="margin-top: 80px">
+      <html>
+        <head></head>
+        <body>
+          <div
+            id="1636529902956d"
+            data-cat="103"
+            class="is-section is-section-100 is-box is-dark-text is-bg-light"
+          >
+            <div class="is-boxes" id="1636529902984">
+              <div class="is-box-centered" id="1636529902984">
+                <div
+                  class="is-container container"
+                  id="1636529902984"
+                  style="max-width: 1400px"
+                >
+                  <div class="row clearfix" id="1636529902984">
+                    <div class="column full center" id="1636529902984">
+                      <h1
+                        class="is-title1-32 is-title-lite"
+                        style="
+                          line-height: 1;
+                          font-family: Arimo, sans-serif;
+                          font-size: 3.5em;
+                        "
+                      >
+                        <b>FINANCIAL CALCULATORS</b>
+                      </h1>
+                      <p
+                        style="
+                          border-bottom: 2.5px solid #e74c3c;
+                          width: 60px;
+                          display: inline-block;
+                          margin-top: 0;
+                        "
+                      ></p>
+                    </div>
+                  </div>
+
+                  <div class="row clearfix" id="1636529902985">
+                    <div class="column full" id="1636529902985">
+                      <div class="spacer height-40" id="1636529902985"></div>
+                    </div>
+                  </div>
+
+                  <div class="row clearfix" id="1636529902985">
+                    <div
+                      class="center column third"
+                      id="1636529902985"
+                      spellcheck="false"
+                    >
+                      <a
+                        href="/PAGES/Finance Calculators/CAGR Calculator.html"
+                        title=""
+                        target="_blank"
+                        ><img
+                          alt=""
+                          style="border-radius: 500px"
+                          data-filename="CAGR-chalculator.png"
+                          class="lazy"
+                          data-src="https://dz8fbjd9gwp2s.cloudfront.net/orgData/5df0bac8e4b0947308291487/pages/assets/images/l2Yflcagrchalculator.png"
+                      /></a>
+                      <h3
+                        class="is-title-lite"
+                        style="
+                          font-family: Anton, sans-serif;
+                          letter-spacing: 1px;
+                          font-size: 2em;
+                        "
+                      >
+                        CAGR CALCULATOR
+                      </h3>
+                    </div>
+
+                    <div
+                      class="center column third"
+                      id="1636529902985"
+                      spellcheck="false"
+                    >
+                      <a
+                        href="/PAGES/Finance Calculators/SIP Calculator.html"
+                        title=""
+                        target="_blank"
+                        ><img
+                          alt=""
+                          style="border-radius: 500px"
+                          data-filename="SIP-chalculator-02.png"
+                          class="lazy"
+                          data-src="https://dz8fbjd9gwp2s.cloudfront.net/orgData/5df0bac8e4b0947308291487/pages/assets/images/Ed1CSsipchalculator02.png"
+                      /></a>
+                      <h3
+                        class="is-title-lite"
+                        style="
+                          font-family: Anton, sans-serif;
+                          letter-spacing: 1px;
+                          font-size: 2em;
+                        "
+                      >
+                        SIP CALCULATOR
+                      </h3>
+                    </div>
+
+                    <div
+                      class="center column third"
+                      id="1636529902985"
+                      spellcheck="false"
+                    >
+                      <a
+                        href="/PAGES/Finance Calculators/GOAL LUMSUM Calculator.html"
+                        title=""
+                        target="_blank"
+                        ><img
+                          alt=""
+                          style="border-radius: 500px"
+                          data-filename="Goal lumsum-calculatur.png"
+                          class="lazy"
+                          data-src="https://dz8fbjd9gwp2s.cloudfront.net/orgData/5df0bac8e4b0947308291487/pages/assets/images/IO2gHgoallumsumcalculatur.png"
+                      /></a>
+                      <h3
+                        class="is-title-lite"
+                        style="
+                          font-family: Anton, sans-serif;
+                          letter-spacing: 1px;
+                          font-size: 2em;
+                        "
+                      >
+                        GOAL Lumpsum CALCULATOR
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div class="row clearfix" id="1636529902985">
+                    <div
+                      class="center column third"
+                      id="1636529902985"
+                      spellcheck="false"
+                    >
+                      <a
+                        href="/PAGES/Finance Calculators/GOAL SIP Calculator.html"
+                        title=""
+                        target="_blank"
+                        ><img
+                          alt=""
+                          style="border-radius: 500px"
+                          data-filename="Goal SIP calculator .png"
+                          class="lazy"
+                          data-src="https://dz8fbjd9gwp2s.cloudfront.net/orgData/5df0bac8e4b0947308291487/pages/assets/images/rdTdNgoalsipcalculator.png"
+                      /></a>
+
+                      <h3
+                        class="is-title-lite"
+                        style="
+                          font-family: Anton, sans-serif;
+                          letter-spacing: 1px;
+                          font-size: 2em;
+                        "
+                      >
+                        GOAL SIP CALCULATOR
+                      </h3>
+                    </div>
+
+                    <div
+                      class="center column third"
+                      id="1636529902985"
+                      spellcheck="false"
+                    >
+                      <a
+                        href="/PAGES/Finance Calculators/LUMSUM FV Calculator.html"
+                        title=""
+                        target="_blank"
+                        ><img
+                          alt=""
+                          style="border-radius: 500px"
+                          data-filename="Lumpsum-Calculator-02.png"
+                          class="lazy"
+                          data-src="https://dz8fbjd9gwp2s.cloudfront.net/orgData/5df0bac8e4b0947308291487/pages/assets/images/AGxM1lumpsumcalculator02.png"
+                      /></a>
+                      <h3
+                        class="is-title-lite"
+                        style="
+                          font-family: Anton, sans-serif;
+                          letter-spacing: 1px;
+                          font-size: 2em;
+                        "
+                      >
+                        LUMPSUM CALCULATOR
+                      </h3>
+                    </div>
+
+                    <div
+                      class="center column third"
+                      id="1636529902985"
+                      spellcheck="false"
+                    >
+                      <a
+                        href="/PAGES/Finance Calculators/POSITION SIZING Calculator.html"
+                        title=""
+                        target="_blank"
+                        ><img
+                          alt=""
+                          style="border-radius: 500px"
+                          data-filename="AGxM1lumpsumcalculator02.png"
+                          class="lazy"
+                          data-src="https://dz8fbjd9gwp2s.cloudfront.net/orgData/5df0bac8e4b0947308291487/pages/assets/images/Hg9M9agxm1lumpsumcalculator02.png"
+                      /></a>
+                      <h3
+                        class="is-title-lite"
+                        style="
+                          font-family: Anton, sans-serif;
+                          letter-spacing: 1px;
+                          font-size: 2em;
+                        "
+                      >
+                        Position Sizing Calculator&nbsp;
+                      </h3>
+                    </div>
+                  </div>
+                  <link
+                    href="//fonts.googleapis.com/css?family=Anton"
+                    rel="stylesheet"
+                    property="stylesheet"
+                    type="text/css"
+                  />
+                  <link
+                    href="//fonts.googleapis.com/css?family=Arimo:400,400i,700,700i"
+                    rel="stylesheet"
+                    property="stylesheet"
+                    type="text/css"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--OTHERS--->
+          <link
+            href="//fonts.googleapis.com/css?family=Anton"
+            rel="stylesheet"
+            property="stylesheet"
+            type="text/css"
+          />
+          <link
+            href="//fonts.googleapis.com/css?family=Arimo:400,400i,700,700i"
+            rel="stylesheet"
+            property="stylesheet"
+            type="text/css"
+          />
+          <link
+            href="//fonts.googleapis.com/css?family=Anton"
+            rel="stylesheet"
+            property="stylesheet"
+            type="text/css"
+          />
+          <link
+            href="//fonts.googleapis.com/css?family=Arimo:400,400i,700,700i"
+            rel="stylesheet"
+            property="stylesheet"
+            type="text/css"
+          />
+        </body>
+      </html>
+    </div>
+
+    <div
+      style="
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        clear: both;
+        width: 100%;
+        flex-direction: column;
+        row-gap: 30px;
+        background: #f7f7f7;
+        color: #232228;
+        padding: 80px 10px;
+      "
+    >
+      <div
+        style="
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          column-gap: 12px;
+        "
+      ></div>
+      <div
+        style="
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          letter-spacing: 0.015em;
+          column-gap: 12px;
+          flex-wrap: wrap;
+        "
+      >
+        <span>Sakshi Jagtap <i class="fa-regular fa-copyright"></i> 2023</span>
+        <i class="fa-solid fa-circle" style="font-size: 4px"></i>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var coursesList = $("#courseslist, .itemsContainer"),
+        blogsList = $("#blogslist");
+      if (
+        coursesList.length > 0 &&
+        coursesList.html().replace(/[\s]/g, "") === ""
+      ) {
+        coursesList
+          .addClass("columns")
+          .html("<div class='loading loading-lg centered'></div>");
+        store.allCourses.init(
+          false,
+          coursesList.data("limit") === undefined
+            ? 4
+            : coursesList.data("limit")
+        );
+      }
+      if (
+        blogsList.length > 0 &&
+        blogsList.html().replace(/[\s]/g, "") === ""
+      ) {
+        blogsList
+          .addClass("columns")
+          .html("<div class='loading loading-lg centered'></div>");
+        var limit =
+            blogsList.data("limit") === undefined ? 4 : blogsList.data("limit"),
+          packet = {
+            url: "/blog/json/get",
+            data: { skip: 0, limit: limit },
+            success: function (data, params) {
+              var template = _.template($("#blogcard-template").html()),
+                html = "",
+                blogs = data.data.blogs.data;
+
+              for (var i = 0; i < blogs.length; i++) {
+                html = html + template({ item: blogs[i] });
+              }
+
+              blogsList.html(html); //.find("time.timeago").timeago();
+            },
+          };
+
+        getData(packet, {});
+      }
+    </script>
+
+    <script
+      src="https://dz8fbjd9gwp2s.cloudfront.net/resources/pagebuilder2/box/box.js"
+      type="text/javascript"
+    ></script>
+
+    <div id="ui-notification-container" class="spectre"></div>
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/jquery-easing.js"></script>
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/resources/js/jquery-notification.js"></script>
+
+    <!-- Import and configure the Firebase SDK -->
+    <!-- These scripts are made available when the app is served or deployed on Firebase Hosting -->
+    <!-- If you do not serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js"></script>
+
+    <script>
+      // Retrieve Firebase Messaging object.
+      var firebaseConfig = {
+        apiKey: "AIzaSyBBw3pRadYFyBemNuHAc93pWr8Ew0Yei38",
+        authDomain: "spayee-ios.firebaseapp.com",
+        databaseURL: "https://spayee-ios.firebaseio.com",
+        projectId: "spayee-ios",
+        storageBucket: "spayee-ios.appspot.com",
+        messagingSenderId: "653948007568",
+        appId: "1:653948007568:web:3c5be693f53e57f3525415",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const messaging = firebase.messaging();
+      // Add the public key generated from the console here.
+      messaging.usePublicVapidKey(
+        "BFB9PJ3fTmfCEbXf5iXS8oYMbAJ5NEQ5-a9rtnUqG9K7Y57Fi39V-0t58N4xhp1kX5pb7jFVWFUKTep9tYAeJ1Y"
+      );
+
+      // Callback fired if Instance ID token is updated.
+      messaging.onTokenRefresh(function () {
+        messaging
+          .getToken()
+          .then(function (refreshedToken) {
+            // Indicate that the new Instance ID token has not yet been sent to the
+            // app server.
+            setTokenSentToServer(false);
+            // Send Instance ID token to app server.
+            sendTokenToServer(refreshedToken);
+            // Display new Instance ID token and clear UI of all previous messages.
+            resetUI();
+            // [END_EXCLUDE]
+          })
+          ["catch"](function (err) {
+            console.log("Unable to retrieve refreshed token ", err);
+            showToken("Unable to retrieve refreshed token ", err);
+            requestPermission();
+          });
+      });
+
+      // Handle incoming messages. Called when:
+      // - a message is received while the app has focus
+      // - the user clicks on an app notification created by a service worker
+      //   `messaging.setBackgroundMessageHandler` handler.
+      messaging.onMessage(function (payload) {
+        console.log("Message received. ", payload);
+        appendMessage(payload);
+      });
+
+      function resetUI() {
+        clearMessages();
+        $(function () {
+          $("#ui-notification-container").notification();
+        });
+        // Get Instance ID token. Initially this makes a network call, once retrieved
+        // subsequent calls to getToken will return from cache.
+        messaging
+          .getToken()
+          .then(function (currentToken) {
+            if (currentToken) {
+              sendTokenToServer(currentToken);
+              updateUIForPushEnabled(currentToken);
+            } else {
+              // Show permission request.
+              console.log(
+                "No Instance ID token available. Request permission to generate one."
+              );
+              // Show permission UI.
+              updateUIForPushPermissionRequired();
+              setTokenSentToServer(false);
+            }
+          })
+          ["catch"](function (err) {
+            console.log("An error occurred while retrieving token. ", err);
+            showToken("Error retrieving Instance ID token. ", err);
+            setTokenSentToServer(false);
+          });
+        // [END get_token]
+      }
+
+      function showToken(currentToken) {
+        // Show token in console and UI.
+        console.log(currentToken);
+      }
+
+      // Send the Instance ID token your application server, so that it can:
+      // - send messages back to this app
+      // - subscribe/unsubscribe the token from topics
+      function sendTokenToServer(currentToken) {
+        if (!isTokenSentToServer()) {
+          console.log("Sending token to server...");
+          var packet = {
+            url: "/public/v1/fcm/token",
+            data: { token: currentToken },
+            success: function (data, params) {
+              console.log("Token successfully sent");
+              setTokenSentToServer(true);
+              setTokenSentToServerUserId(window.userId);
+            },
+          };
+          postData(packet, {});
+        } else {
+          console.log(
+            "Token already sent to server so won't send it again " +
+              "unless it changes"
+          );
+        }
+      }
+
+      function isTokenSentToServer() {
+        return (
+          window.localStorage.getItem("sentToServer") === "1" &&
+          isTokenSentToServerWithUser(window.userId)
+        );
+      }
+
+      function isTokenSentToServerWithUser(userId) {
+        return window.localStorage.getItem("sentToServer-user") === userId;
+      }
+
+      function setTokenSentToServer(sent) {
+        window.localStorage.setItem("sentToServer", sent ? "1" : "0");
+      }
+
+      function setTokenSentToServerUserId(userId) {
+        window.localStorage.setItem("sentToServer-user", userId);
+      }
+
+      function requestPermission() {
+        console.log("Requesting permission...");
+        // [START request_permission]
+        Notification.requestPermission().then(function (permission) {
+          if (permission === "granted") {
+            console.log("Notification permission granted.");
+            resetUI();
+          } else {
+            console.log("Unable to get permission to notify.");
+          }
+        });
+        // [END request_permission]
+      }
+
+      function deleteToken() {
+        // Delete Instance ID token.
+        // [START delete_token]
+        messaging
+          .getToken()
+          .then(function (currentToken) {
+            messaging
+              .deleteToken(currentToken)
+              .then(function () {
+                console.log("Token deleted.");
+                setTokenSentToServer(false);
+                // Once token is deleted update UI.
+                resetUI();
+              })
+              ["catch"](function (err) {
+                console.log("Unable to delete token. ", err);
+              });
+          })
+          ["catch"](function (err) {
+            console.log("Error retrieving Instance ID token. ", err);
+            showToken("Error retrieving Instance ID token. ", err);
+          });
+      }
+
+      // Add a message to the messages element.
+      function appendMessage(payload) {
+        $("#ui-notification-container").notification(
+          "create",
+          {
+            title: payload.data.title,
+            content: payload.data.message,
+            customIcon: payload.data.customIcon,
+            customImage: payload.data.customImage,
+            link: payload.data.link,
+          },
+          {
+            sticky: true,
+          }
+        );
+      }
+
+      // Clear the messages element of all children.
+      function clearMessages() {
+        const messagesElement = document.querySelector(
+          "#ui-notification-container"
+        );
+        while (messagesElement.hasChildNodes()) {
+          messagesElement.removeChild(messagesElement.lastChild);
+        }
+      }
+
+      function updateUIForPushEnabled(currentToken) {
+        showToken("Token update ui: " + currentToken);
+      }
+
+      function updateUIForPushPermissionRequired() {
+        console.warg("Push notification permission is requred");
+      }
+
+      window.userId = "";
+      resetUI();
+    </script>
+
+    <script src="https://dz8fbjd9gwp2s.cloudfront.net/static/files/lazyload.min.js"></script>
+    <script type="text/javascript">
+      var lazyLoadInstance = new LazyLoad({
+        unobserve_entered: true,
+        callback_enter: function (element) {
+          resizeCdnImage(element);
+        },
+      });
+    </script>
+  </body>
+</html>
